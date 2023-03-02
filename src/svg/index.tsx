@@ -133,3 +133,18 @@ export const BigRightArrow = () => {
     )
 }
 
+export const HorizontalLine = () => {
+    return(
+        <svg width="155" height="1" viewBox="0 0 155 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.5 0.5H154.5" stroke="#C0B7E8" stroke-opacity="0.33"/>
+        </svg>
+    )
+}
+
+export const DownArrow = () => {
+    return(
+        <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.5 2L14 14.5L26.5 2" stroke="#433D60" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    )
+}

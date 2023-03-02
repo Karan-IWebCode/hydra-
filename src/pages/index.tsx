@@ -9,6 +9,7 @@ import Layout from "../components/Layout";
 import HeroSection from "../components/HeroSection";
 import Introduction from "../components/Introduction";
 import CardCmpt from "../components/CardCmpt";
+import BannerCmpt from "../components/BannerCmpt";
 const pageStyles = {
   color: "#ffffff",
 

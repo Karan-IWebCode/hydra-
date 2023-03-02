@@ -100,6 +100,7 @@ const background = {
 const Header = () => {
   return (
     <>
+    
       {/* <header className="  " style={pageStyles}>
         <div className="container d-flex p-3 justify-content-between">
           <div className="m-3">
@@ -177,7 +178,7 @@ const Header = () => {
 
       {/* New Header */}
 
-      <div style={pageStyles}>
+      {/* <div style={pageStyles}>
         <WrapperContainer>
           <div>
             <div className="m-3">
@@ -218,7 +219,7 @@ const Header = () => {
             </h1>
           </div>
         </WrapperContainer>
-      </div>
+      </div> */}
     </>
   );
 };

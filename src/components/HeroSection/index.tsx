@@ -2,9 +2,10 @@ import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "@popperjs/core/dist/umd/popper.min.js";
-import styled from 'styled-components'//@ts-ignore
+import styled from 'styled-components'
 import HeadImage from '../../assets/HeadImage.png';
 import GroupBg from '../../assets/bgHero.png';
+import LeftBg from '../../assets/Vector 4.png';
 import HeadSectionCpmt from '../HeroSectionCpmt'
 import Primarybtn from '../ButtonCmpt';
 import { ShortRightArrow } from '../../svg';
@@ -42,23 +43,26 @@ color: #FFFFFF;
 
 const SelectedWhite = styled.span`
 color: white;
--webkit-text-fill-color:white
+-webkit-text-fill-color:white;
 `
 
 const WrapperContainer = styled.div`
   padding-top: 1.5rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  /* margin-left: 10rem;
+  margin-right: 10rem; */
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 
 const RightCol = styled.div`
+/* position: relative; */
+text-align: right;
     /* background: url('../../assets/bgHero.png'); */
-    position: relative;
+    /* position: relative;
     top:-300;
-    left:-200;
+    left:-200; */
 `
 
 const HeroSection = () => {
@@ -66,9 +70,10 @@ const HeroSection = () => {
     
     <>
     <div style={pageStyles}>
-      <WrapperContainer>
-        <div className='row  d-flex justify-content-between'  >
+      <WrapperContainer className='container'>
+        <div className='row  d-flex justify-content-between w-100'  >
             <div className="col-5 p-5 " style={{marginTop:"4rem"}}>
+              <img src={LeftBg} style={{position:"absolute",top:120,left:50 }}/>
                 <Heading>Dive <SelectedWhite>into the Depths</SelectedWhite></Heading>
                 <Heading><SelectedWhite>Of</SelectedWhite> Virtual Reality</Heading>
                 <Content>
@@ -82,10 +87,10 @@ const HeroSection = () => {
                   
                 </div>
             </div>
-            <RightCol className="col-6" style={{textAlign:"right"}}>
+            <RightCol>
               {/* <HeadSectionImage /> */}
-              <img src={GroupBg} style={{position:'relative', top:'150', left:'70'}}/>
-              <img src={HeadImage} style={{position:'absolute', top:'25', left:'50'}}/>
+              <img src={GroupBg} style={{position:'absolute', top:0, right:100}}/>
+              <img src={HeadImage} style={{position:'absolute', top:170, right:160}}/>
             </RightCol>
       
       

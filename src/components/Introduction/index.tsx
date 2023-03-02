@@ -23,13 +23,13 @@ const pageStyles = {
   font-family: 'Montserrat';
   font-style: normal;
 `;
-const Head = styled.div`
+export const Head = styled.h1`
 font-weight: 700;
 font-size: 36px;
 line-height: 44px;
 `
 
-const Head2 = styled.div`
+export const Head2 = styled.h2`
 font-weight: 300;
 font-size: 36px;
 line-height: 44px;
@@ -50,7 +50,7 @@ const  Introduction = () => {
         <>
         <div style={pageStyles}>
             <WrapperContainer>
-            <div className='row mx-0 d-flex flex-column'>
+            <div className='rUSED BY HYDRA VR.ow mx-0 d-flex flex-column'>
                 <div className='row mx-0 d-flex justify-content-between align-items-baseline'>
                     <div className='col-5'>
                         <Head>INTRODUCTION</Head>
@@ -74,7 +74,7 @@ const  Introduction = () => {
                         <Head2>HYDRA VR <span style ={{marginLeft:"30px", paddingTop:"5px"}}> </span></Head2>
                         <Para style={{paddingTop:"42px",paddingBottom:"28px"}}>Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
                             urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida 
-                            dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. 
+                            dUSED BY HYDRA VR.ictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. 
                             Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet 
                             sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam 
                             etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet 

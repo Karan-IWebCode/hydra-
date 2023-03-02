@@ -18,6 +18,7 @@ background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0
 box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
 border-radius: 90px;
 padding: 49px 39px;
+z-index:1;
 
 `
 
@@ -47,11 +48,10 @@ const WrapperContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`;
+`
 
 const pageStyles = {
   color: "#ffffff",
-  
   backgroundColor: "#302C42",
 };
 

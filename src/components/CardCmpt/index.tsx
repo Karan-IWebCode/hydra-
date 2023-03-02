@@ -7,12 +7,15 @@ import ButtonCmpt from '../ButtonCmpt';
 import { cardData } from './data';
 import { Link } from 'gatsby';
 import {WrapperContainer} from '../Header'
+import { HorizontalLine } from '../../svg';
+import BannerCmpt from '../BannerCmpt';
 
 const pageStyles = {
     color: "#ffffff",
     fontFamily: 'Montserrat',
     fontStyle: 'normal',
-    backgroundColor: "#302C42"
+    backgroundColor: "#302C42",
+    paddingTop:"80px"
   }
 
 const Card = styled.div`
@@ -23,22 +26,40 @@ height: 511px;
 display: flex;
 flex-direction: column;
 justify-content: center;
+align-items: center;
 `
+
+const Img = styled.img`
+border-radius: 200px;
+height: 219px;
+width: 219px;
+margin-bottom: 21px;
+justify-content: center;
+align-content: center;
+border: 14px solid rgba(14, 14, 14, 0.32);
+`
+
 const Head = styled.h1`
 font-weight: 700;
 font-size: 24px;
 line-height: 29px;
+text-align: center;
+margin-bottom: 17px;
 `
 const Para = styled.p`
 font-weight: 400;
 font-size: 12px;
 line-height: 15px;
+padding-left: 25px;
+padding-right: 35px;
+margin-top: 21px;
 `
 
 const CardCmpt = () => {
     return (
+        <>
         <div style={pageStyles}>
-            <WrapperContainer>
+            <WrapperContainer >
                 
                 {
                     cardData.map((item, index) => {
@@ -46,9 +67,11 @@ const CardCmpt = () => {
                             
                             <div>
                                 <Card>
-                                <Head> {item.title}</Head>
+                                
                                 {/* Line */}
-                                <img src={item.image}/>
+                                <Img src={item.image}/>
+                                <Head> {item.title}</Head>
+                                <HorizontalLine/>
                                 <Para>{item.content}</Para>
                                 <Link to={item.link}>
                                     <ButtonCmpt text="TRY IT NOW" />
@@ -59,8 +82,11 @@ const CardCmpt = () => {
                     })
                 }
                 
+                
             </WrapperContainer>
         </div>
+        <BannerCmpt/>
+        </>
     )
 }
 

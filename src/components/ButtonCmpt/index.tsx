@@ -34,4 +34,5 @@ const Primarybtn = ({ text }) => {
     )
 }
 
+
 export default Primarybtn;
