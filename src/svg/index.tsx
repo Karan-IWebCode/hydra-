@@ -49,3 +49,87 @@ export const HydraIcon = () => {
     )
 }
 
+export const Location = () => {
+    return(
+        <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0002 5.83331C46.276 5.83331 55.4168 14.9742 55.4168 26.25C55.4168 29.6593 54.5836 32.8717 53.1041 35.6983L35.0002 67.0833L17.3156 36.4595C15.5752 33.4541 14.5835 29.9692 14.5835 26.25C14.5835 14.9742 23.7243 5.83331 35.0002 5.83331ZM35.0002 11.6666C26.946 11.6666 20.4168 18.1958 20.4168 26.25C20.4168 28.566 20.9511 30.7882 21.9622 32.7943L22.4521 33.6892L35.0002 55.4166L47.6368 33.5362C48.9073 31.3422 49.5835 28.8555 49.5835 26.25C49.5835 18.1958 43.0543 11.6666 35.0002 11.6666ZM35.0002 17.5C39.8327 17.5 43.7502 21.4175 43.7502 26.25C43.7502 31.0825 39.8327 35 35.0002 35C30.1677 35 26.2502 31.0825 26.2502 26.25C26.2502 21.4175 30.1677 17.5 35.0002 17.5ZM35.0002 23.3333C33.3893 23.3333 32.0835 24.6391 32.0835 26.25C32.0835 27.8608 33.3893 29.1666 35.0002 29.1666C36.611 29.1666 37.9168 27.8608 37.9168 26.25C37.9168 24.6391 36.611 23.3333 35.0002 23.3333Z" fill="#C0B7E8"/>
+        </svg>
+    )
+}
+
+export const Mail = () => {
+    return(
+        <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.91825 14.3349C9.40836 13.8448 10.0854 13.5417 10.8333 13.5417H54.1667C54.9146 13.5417 55.5916 13.8448 56.0817 14.3349M8.91825 14.3349C8.42814 14.8251 8.125 15.5021 8.125 16.25V48.75C8.125 50.2458 9.33756 51.4584 10.8333 51.4584H54.1667C55.6624 51.4584 56.875 50.2458 56.875 48.75V16.25C56.875 15.5021 56.5719 14.8251 56.0817 14.3349M8.91825 14.3349L28.6698 34.0864C30.7852 36.2017 34.2148 36.2017 36.3302 34.0864L56.0817 14.3349" stroke="#C0B7E8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    )
+}
+
+export const PhoneCall = () => {
+    return(
+        <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M35.6457 15.9792C37.4579 16.3327 39.2568 17.1319 40.5623 18.4375C41.8679 19.7431 42.6671 21.542 43.0207 23.3542M36.8748 7.375C40.6399 7.79326 44.0279 9.61471 46.7082 12.2917C49.3885 14.9686 51.2019 18.3605 51.6249 22.125M51.6235 40.5051V47.1666C51.6339 49.7131 49.3442 51.8395 46.7732 51.6077C24.5833 51.625 7.375 34.2568 7.39237 12.2159C7.16082 9.65866 9.27671 7.37761 11.8199 7.37522H18.4947C19.5744 7.36461 20.6212 7.74621 21.4399 8.4489C23.7675 10.4467 25.2646 17.2274 24.6886 19.923C24.2389 22.0276 22.1174 23.4999 20.6751 24.9394C23.8423 30.4985 28.4543 35.1014 34.0245 38.2624C35.4668 36.823 36.9421 34.7057 39.0508 34.2568C41.7559 33.6811 48.5803 35.1803 50.5701 37.5241C51.2757 38.3552 51.6506 39.4161 51.6235 40.5051Z" stroke="#C0B7E8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    )
+}
+
+export const Line = () => {
+    return(
+        <svg width="1" height="117" viewBox="0 0 1 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.5 116.5V0" stroke="#C0B7E8" stroke-opacity="0.33"/>
+        </svg>
+    )
+}
+
+export const HydraGroup = () => {
+    return(
+        <svg width="76" height="46" viewBox="0 0 76 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0H2.32086V27.4049H9.25075V0H11.5716V46H9.25075V29.7131H2.32086V46H0V0Z" fill="url(#paint0_linear_1_10)"/>
+        <path d="M28.7329 0L22.9798 29.7131V46H20.6589V29.7131L14.8731 0H16.9978L21.8357 24.7717L26.6408 0H28.7329Z" fill="url(#paint1_linear_1_10)"/>
+        <path d="M38.997 46H32.0344V0H38.9643C41.5467 0 43.5733 2.04806 43.5733 4.58375V41.3837C43.606 43.8869 41.5467 46 38.997 46ZM34.3553 2.30813V43.6919H38.9643C40.2065 43.6919 41.2852 42.6516 41.2852 41.3837V4.58375C41.2852 3.34841 40.2392 2.27562 38.9643 2.27562H34.3553V2.30813Z" fill="url(#paint2_linear_1_10)"/>
+        <path d="M58.806 46H56.4198L52.3338 29.7131H49.5553V46H47.2344V0H54.1643C56.7467 0 58.7733 2.04806 58.7733 4.58375V25.0968C58.7733 27.4049 56.9755 29.3555 54.6873 29.6155L58.806 46ZM49.5553 27.4049H54.1643C55.4064 27.4049 56.4852 26.3647 56.4852 25.0968V4.58375C56.4852 3.34841 55.4391 2.27562 54.1643 2.27562H49.5553V27.4049Z" fill="url(#paint3_linear_1_10)"/>
+        <path d="M65.8013 29.7131L64.1996 46H62.1075L66.7492 0H71.3583L75.9673 46H73.8753L72.2735 29.7131H65.8013ZM69.495 2.30813H68.5798L66.0628 27.4049H72.012L69.495 2.30813Z" fill="url(#paint4_linear_1_10)"/>
+        <defs>
+        <linearGradient id="paint0_linear_1_10" x1="5.78581" y1="0" x2="5.78581" y2="46" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#C0B7E8"/>
+        <stop offset="1" stop-color="#8176AF"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_1_10" x1="21.803" y1="0" x2="21.803" y2="46" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#C0B7E8"/>
+        <stop offset="1" stop-color="#8176AF"/>
+        </linearGradient>
+        <linearGradient id="paint2_linear_1_10" x1="37.8041" y1="0" x2="37.8041" y2="46" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#C0B7E8"/>
+        <stop offset="1" stop-color="#8176AF"/>
+        </linearGradient>
+        <linearGradient id="paint3_linear_1_10" x1="53.0202" y1="0" x2="53.0202" y2="46" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#C0B7E8"/>
+        <stop offset="1" stop-color="#8176AF"/>
+        </linearGradient>
+        <linearGradient id="paint4_linear_1_10" x1="69.0374" y1="0" x2="69.0374" y2="46" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#C0B7E8"/>
+        <stop offset="1" stop-color="#8176AF"/>
+        </linearGradient>
+        </defs>
+        </svg>
+
+    )
+}
+
+export const ShortRightArrow = () => {
+    return(
+        <svg width="46" height="38" viewBox="0 0 46 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M43.8333 19L2.16666 19M43.8333 19L27.1667 35.6667M43.8333 19L27.1667 2.33333" stroke="#C0B7E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    )
+}
+
+export const BigRightArrow = () => {
+    return(
+        <svg width="228" height="100" viewBox="0 0 228 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M198.833 50L157.167 50M198.833 50L182.167 66.6666M198.833 50L182.167 33.3333" stroke="#C0B7E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M157.5 50H0" stroke="#C0B7E8" stroke-width="3"/>
+        </svg>
+    )
+}
+

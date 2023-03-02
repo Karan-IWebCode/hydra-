@@ -7,6 +7,8 @@ import styled from 'styled-components'
 import {HydraIcon, Logo} from "../svg";
 import Layout from "../components/Layout";
 import HeroSection from "../components/HeroSection";
+import Introduction from "../components/Introduction";
+import CardCmpt from "../components/CardCmpt";
 const pageStyles = {
   color: "#ffffff",
 
@@ -86,8 +88,9 @@ background-color: #302C42;
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
-      <h1>hello</h1>
       <HeroSection/>
+      <Introduction/>
+      <CardCmpt/>
     </Layout>
   )
 }
