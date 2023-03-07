@@ -59,13 +59,15 @@ const CardCmpt = () => {
     return (
         <>
         <div style={pageStyles}>
-            <WrapperContainer className='container'>
+            <WrapperContainer className='container 
+            '
+            >
                 
                 {
                     cardData.map((item, index) => {
                         return (
                             
-                            <div>
+                            <div className='col-md-4'>
                                 <Card>
                                 
                                 {/* Line */}

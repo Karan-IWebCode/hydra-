@@ -5,8 +5,8 @@ import "@popperjs/core/dist/umd/popper.min.js";
 
 import styled from "styled-components";
 import { Logo } from "../../svg";
-import {list1, list2} from './data'
-import {Facebook, Twitter, Linkedin, Youtube, Instagram, Pinterest, Footerline, FooterVerticalLine} from '../../svg/index'
+import { list1, list2 } from './data'
+import { Facebook, Twitter, Linkedin, Youtube, Instagram, Pinterest, Footerline, FooterVerticalLine } from '../../svg/index'
 import Primarybtn from '../ButtonCmpt';
 import Logo2 from '../../assets/Vector.png';
 
@@ -16,7 +16,7 @@ const pageStyles = {
   fontStyle: 'normal',
   color: "#ffffff",
   backgroundColor: "#302C42",
-  paddingTop:"127px"
+  paddingTop: "127px"
 }
 
 const Head4 = styled.h4`
@@ -42,69 +42,66 @@ const SvgWrap = styled.div`
 svg{
   margin-right:10px;
 }
+@media (max-width:768px) {
+  flex-direction: column;
+}
 `
 
 const Footer = () => {
   return (
     <div style={pageStyles}>
 
-      <div className='container d-flex flex-row justify-content-between' >
-          <div >
-            {/* <Logo/> */}
-            <Logo3 src={Logo2}></Logo3>
-          </div>
+      <div className='container d-flex w-100' >
+        <div className='col-md-3'>
+          {/* <Logo/> */}
+          <Logo3 src={Logo2}></Logo3>
+        </div>
+        <FooterVerticalLine />
 
-          <FooterVerticalLine/>
-
-        <div className='d-flex flex-column'>
+        <div className='d-flex flex-column col-md-3'>
           {
             list1.map((item, index) => {
-              return(
-                <Head4 style={{marginBottom:"20px"}}>{item.values}</Head4>
+              return (
+                <Head4 style={{ marginBottom: "20px" }}>{item.values}</Head4>
               )
             })
           }
         </div>
 
-        <FooterVerticalLine/>
+        <FooterVerticalLine />
 
-        <div className='d-flex flex-column' style={{paddingBottom:"79px"}}>
+        <div className='d-flex flex-column col-md-3' style={{ paddingBottom: "79px" }}>
           {
             list2.map((item, index) => {
-              return(
-                <Head4 style={{marginBottom:"20px"}}>{item.values}</Head4>
+              return (
+                <Head4 style={{ marginBottom: "20px" }}>{item.values}</Head4>
               )
             })
           }
         </div>
 
-        <FooterVerticalLine/>
+        <FooterVerticalLine />
 
-        <div className='d-flex flex-column'>
+        <div className='d-flex col-md-3 flex-column'>
           <Head4>SOCIALIZE WITH HYDRA</Head4>
-          <SvgWrap className="d-flex justify-content-between" style={{marginTop:"29px", marginBottom:"39px"}}> 
-          
-            <Facebook/>
-
-            <Twitter/>
-
-            <Linkedin/>
-            <Youtube/>
-
-            <Instagram/>
-            <Pinterest/>
-            
+          <SvgWrap className="d-flex justify-content-between" style={{ marginTop: "29px", marginBottom: "39px" }}>
+            <Facebook />
+            <Twitter />
+            <Linkedin />
+            <Youtube />
+            <Instagram />
+            <Pinterest />
           </SvgWrap>
-          <Primarybtn text="Build Your World"/>
+          <Primarybtn text="Build Your World" />
         </div>
 
-        
+
       </div>
       <div className='container'>
-        <Footerline/>
-        <Head5 className="d-flex justify-content-center"style={{marginTop:"49px",paddingBottom:"59px"}}>2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED</Head5>
-        </div>
-      
+        <Footerline />
+        <Head5 className="d-flex justify-content-center" style={{ marginTop: "49px", paddingBottom: "59px" }}>2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED</Head5>
+      </div>
+
     </div>
   )
 }

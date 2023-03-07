@@ -49,7 +49,7 @@ const  Introduction = () => {
         <>
         <div style={pageStyles}>
             <WrapperContainer className='container'>
-            <div className='rUSED BY HYDRA VR.ow mx-0 d-flex flex-column'>
+            <div className=' mx-0 d-flex flex-column'>
                 <div className='row mx-0 d-flex justify-content-between align-items-baseline'>
                     <div className='col-5'>
                         <Head>INTRODUCTION</Head>

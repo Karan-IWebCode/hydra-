@@ -16,6 +16,7 @@ const Button2 = styled.button`
   border-radius: 40px;
   background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
   color: black;
+  width: 100%;
 //   width: 155px;
 //   height: 48px;
   :hover {
