@@ -18,7 +18,7 @@ background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0
 box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
 border-radius: 90px;
 padding: 49px 39px;
-z-index:1;
+z-index:22;
 
 `
 
@@ -43,8 +43,9 @@ margin-top:9px;
 
 const WrapperContainer = styled.div`
   padding-top: 1.5rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+
+  /* margin-left: 10rem;
+  margin-right: 10rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,13 +60,13 @@ const HeroSection = () => {
   return (
     <>
       <div style={pageStyles} >
-          <WrapperContainer>
+          <WrapperContainer className="container">
             <Overlay className="col d-flex flex-row justify-content-between">
               <div className='d-flex flex-col align-items-center'>
                 <InfoLogo>
                   <Location/>
                 </InfoLogo>
-                <div >
+                <div style={{marginRight:"20px"}}>
                   <InfoHeading>Pay Us a Visit</InfoHeading>
                   <InfoContent>Union st, Seattle, WA 98101,United States</InfoContent>            
                 </div>
@@ -77,7 +78,7 @@ const HeroSection = () => {
                 <InfoLogo>
                   <PhoneCall/>
                 </InfoLogo>
-                <div>
+                <div style={{marginRight:"20px"}}>
                   <InfoHeading>Give Us a Call</InfoHeading>
                   <InfoContent>(110) 1111-1010</InfoContent>            
                 </div>
@@ -89,7 +90,7 @@ const HeroSection = () => {
                 <InfoLogo>
                   <Mail/>
                 </InfoLogo>
-                <div>
+                <div style={{marginRight:"20px"}}>
                   <InfoHeading>Send Us a Message</InfoHeading>
                   <InfoContent>Contact@HydraVTech.com</InfoContent>            
                 </div>

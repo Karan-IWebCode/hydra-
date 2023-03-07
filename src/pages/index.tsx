@@ -10,6 +10,9 @@ import HeroSection from "../components/HeroSection";
 import Introduction from "../components/Introduction";
 import CardCmpt from "../components/CardCmpt";
 import BannerCmpt from "../components/BannerCmpt";
+import FlowDiagram from "../components/FlowDiagram";
+import Footer from "../components/Footer";
+import ReactForm from "../components/ReactForm";
 const pageStyles = {
   color: "#ffffff",
 
@@ -92,6 +95,8 @@ const IndexPage: React.FC<PageProps> = () => {
       <HeroSection/>
       <Introduction/>
       <CardCmpt/>
+      <FlowDiagram/>
+      <ReactForm/>
     </Layout>
   )
 }

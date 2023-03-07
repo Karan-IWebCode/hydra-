@@ -4,7 +4,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "@popperjs/core/dist/umd/popper.min.js";
 
 import styled from "styled-components";
-import { Logo } from "../../svg";
+import { HeaderGroup, Logo } from "../../svg";
 import { HydraGroup } from "../../svg";
 
 const pageStyles = {
@@ -87,8 +87,8 @@ const Navbar = styled.nav`
 
 export const WrapperContainer = styled.div`
   padding-top: 1.5rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  /* margin-left: 10rem;
+  margin-right: 10rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,10 +97,13 @@ export const WrapperContainer = styled.div`
 const background = {
   backgroundColor: "#302C42",
 };
+
+const Acc = styled.a`
+color:white
+`
 const Header = () => {
   return (
     <>
-    
       {/* <header className="  " style={pageStyles}>
         <div className="container d-flex p-3 justify-content-between">
           <div className="m-3">
@@ -179,7 +182,7 @@ const Header = () => {
       {/* New Header */}
 
       {/* <div style={pageStyles}>
-        <WrapperContainer>
+        <WrapperContainer className="container">
           <div>
             <div className="m-3">
               <Logo />
@@ -220,6 +223,71 @@ const Header = () => {
           </div>
         </WrapperContainer>
       </div> */}
+
+      <div style={pageStyles}>
+        <WrapperContainer className="container">
+        
+        <div>
+          <HeaderGroup />
+        </div>
+        
+        <nav className="navbar navbar-expand-lg bg-body-tertiary w-100">
+  <div className="container p-0" >
+    
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav mb-2 mb-lg-0">
+       
+        
+        
+      </ul>
+    </div>
+
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav mb-2 mb-lg-0" style={{fontFamily: "Montserrat", fontStyle: "normal",fontWeight: "700",fontSize: "12px"}}>
+       
+        <li className="nav-item" style={{marginLeft:"42px"}}>
+          <Acc className="nav-link " aria-current="page" href="#">ABOUT</Acc>
+        </li>
+        <li className="nav-item" style={{marginLeft:"42px"}}>
+          <Acc className="nav-link" href="#">SERVICES</Acc>
+        </li>
+        <li className="nav-item" style={{marginLeft:"42px"}}>
+          <Acc className="nav-link" href="#">TECHNOLOGIES</Acc>
+        </li>
+        <li className="nav-item" style={{marginLeft:"42px"}}>
+          <Acc className="nav-link" href="#">HOW TO</Acc>
+        </li>
+        
+      </ul>
+    </div>
+    
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav  mb-2 mb-lg-0">
+       
+        <li className="nav-item" style={{marginLeft:"42px"}}>
+          <Button className="btn " type="submit">
+            CONTACT US
+          </Button>
+        </li>
+        <li className="nav-item" style={{marginLeft:"42px"}}>
+          <Button2 className="btn " type="submit">
+                  JOIN HYDRA
+          </Button2> 
+        </li>
+       
+      
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+        </WrapperContainer>
+      </div>
+
     </>
   );
 };

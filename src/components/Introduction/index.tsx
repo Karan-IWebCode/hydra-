@@ -15,8 +15,7 @@ const pageStyles = {
 
   const WrapperContainer = styled.div`
   padding-top: 1.5rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +36,7 @@ display: flex;
 align-items: center;
 
 `
-const Para = styled.div`
+export const Para = styled.div`
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
@@ -49,7 +48,7 @@ const  Introduction = () => {
     return(
         <>
         <div style={pageStyles}>
-            <WrapperContainer>
+            <WrapperContainer className='container'>
             <div className='rUSED BY HYDRA VR.ow mx-0 d-flex flex-column'>
                 <div className='row mx-0 d-flex justify-content-between align-items-baseline'>
                     <div className='col-5'>

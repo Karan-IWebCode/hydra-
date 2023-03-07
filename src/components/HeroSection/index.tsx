@@ -64,16 +64,20 @@ text-align: right;
     top:-300;
     left:-200; */
 `
+const Backg = styled.div`
+/* background: url(${GroupBg}); */
+z-index: 12;
 
+`
 const HeroSection = () => {
   return (
     
     <>
     <div style={pageStyles}>
       <WrapperContainer className='container'>
-        <div className='row  d-flex justify-content-between w-100'  >
-            <div className="col-5 p-5 " style={{marginTop:"4rem"}}>
-              <img src={LeftBg} style={{position:"absolute",top:120,left:50 }}/>
+        <div className='row  d-flex justify-content-between w-100'>
+            <div className="col-5" style={{marginTop:"4rem"}}>
+              <img src={LeftBg} style={{position:"absolute",top:180,left:150 }}/>
                 <Heading>Dive <SelectedWhite>into the Depths</SelectedWhite></Heading>
                 <Heading><SelectedWhite>Of</SelectedWhite> Virtual Reality</Heading>
                 <Content>
@@ -87,11 +91,14 @@ const HeroSection = () => {
                   
                 </div>
             </div>
-            <RightCol>
-              {/* <HeadSectionImage /> */}
-              <img src={GroupBg} style={{position:'absolute', top:0, right:100}}/>
-              <img src={HeadImage} style={{position:'absolute', top:170, right:160}}/>
-            </RightCol>
+            
+            
+            
+
+            <Backg className="col-5">
+              <img src={GroupBg} style={{position:'absolute',top:'4%',right:'14%', zIndex:-1}}/>
+              <img src={HeadImage} />
+            </Backg>
       
       
         </div>

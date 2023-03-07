@@ -59,7 +59,7 @@ const CardCmpt = () => {
     return (
         <>
         <div style={pageStyles}>
-            <WrapperContainer >
+            <WrapperContainer className='container'>
                 
                 {
                     cardData.map((item, index) => {
