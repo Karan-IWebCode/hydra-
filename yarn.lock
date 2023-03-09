@@ -7865,6 +7865,7 @@ __metadata:
     react-dom: ^18.2.0
     react-hook-form: ^7.43.3
     styled-components: ^5.3.6
+    swiper: ^9.1.0
     typescript: ^4.9.5
   languageName: unknown
   linkType: soft
@@ -12070,6 +12071,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ssr-window@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "ssr-window@npm:4.0.2"
+  checksum: df182600927f4f3225224cf8c02338ea637c9750519505bbfb9a9236741a2a7ec088386fb948bca7b447b8303d9109e7dc7672e3de041c79ac2a0e03665af7d2
+  languageName: node
+  linkType: hard
+
 "ssri@npm:^9.0.0":
   version: 9.0.1
   resolution: "ssri@npm:9.0.1"
@@ -12418,6 +12426,15 @@ __metadata:
   dependencies:
     tslib: ^2.0.3
   checksum: 6e21c9e1b3cd5735eb2af679a99ec3efc78a14e3d4d5e3fd594e254b91cfd37185b3d1c6e41b22f53a2cdf5d1b963ce30c0fe8b78337e3fd43d0137084670a5f
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "swiper@npm:9.1.0"
+  dependencies:
+    ssr-window: ^4.0.2
+  checksum: 470254dc2f3975221263c57e4243d0ff0914fdffe4aa30793f84beb5bb44bfa507b950eb73c283f3516e907282993448d4a2b857ce0353d47ef0f9c2d89ed2b9
   languageName: node
   linkType: hard
 

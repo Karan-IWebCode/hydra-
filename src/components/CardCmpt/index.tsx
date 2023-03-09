@@ -9,6 +9,7 @@ import { Link } from 'gatsby';
 import {WrapperContainer} from '../Header'
 import { HorizontalLine } from '../../svg';
 import BannerCmpt from '../BannerCmpt';
+import MobileCardCmpt from '../MobileCmpt/MobileCardCmpt';
 
 const pageStyles = {
     color: "#ffffff",
@@ -59,15 +60,13 @@ const CardCmpt = () => {
     return (
         <>
         <div style={pageStyles}>
-            <WrapperContainer className='container 
-            '
-            >
+            <WrapperContainer className='container'>
                 
                 {
                     cardData.map((item, index) => {
                         return (
                             
-                            <div className='col-md-4'>
+                            <div className='col-3'>
                                 <Card>
                                 
                                 {/* Line */}
@@ -76,7 +75,7 @@ const CardCmpt = () => {
                                 <HorizontalLine/>
                                 <Para>{item.content}</Para>
                                 <Link to={item.link}>
-                                    <ButtonCmpt text="TRY IT NOW" />
+                                    <ButtonCmpt text="TRY IT NOW"  />
                                 </Link>
                                 </Card>
                             </div>
@@ -87,6 +86,7 @@ const CardCmpt = () => {
                 
             </WrapperContainer>
         </div>
+        {/* <MobileCardCmpt /> */}
         <BannerCmpt/>
         </>
     )

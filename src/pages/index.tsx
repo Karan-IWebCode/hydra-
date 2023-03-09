@@ -1,8 +1,8 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-import "@popperjs/core/dist/umd/popper.min.js";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.min.js";
+// import "@popperjs/core/dist/umd/popper.min.js";
 import styled from 'styled-components'
 import {HydraIcon, Logo} from "../svg";
 import Layout from "../components/Layout";
@@ -13,6 +13,7 @@ import BannerCmpt from "../components/BannerCmpt";
 import FlowDiagram from "../components/FlowDiagram";
 import Footer from "../components/Footer";
 import ReactForm from "../components/ReactForm";
+import MobileCardCmpt from "../components/MobileCmpt/MobileCardCmpt";
 const pageStyles = {
   color: "#ffffff",
 
@@ -89,12 +90,14 @@ const Navbar = styled.nav`
 background-color: #302C42;
 `
 
+
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <HeroSection/>
       <Introduction/>
       <CardCmpt/>
+      
       <FlowDiagram/>
       <ReactForm/>
     </Layout>
