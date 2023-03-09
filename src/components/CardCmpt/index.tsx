@@ -1,12 +1,9 @@
 import React from 'react'
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-import "@popperjs/core/dist/umd/popper.min.js";
 import styled from 'styled-components'
 import ButtonCmpt from '../ButtonCmpt';
 import { cardData } from './data';
 import { Link } from 'gatsby';
-import {WrapperContainer} from '../Header'
+import {WrapperContainer} from '../Header' // CREATE GLOBAL COMPONENTS TO USE IN DIFF COMPONENTS
 import { HorizontalLine } from '../../svg';
 import BannerCmpt from '../BannerCmpt';
 import MobileCardCmpt from '../MobileCmpt/MobileCardCmpt';

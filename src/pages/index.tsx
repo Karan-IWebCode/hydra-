@@ -97,7 +97,6 @@ const IndexPage: React.FC<PageProps> = () => {
       <HeroSection/>
       <Introduction/>
       <CardCmpt/>
-      
       <FlowDiagram/>
       <ReactForm/>
     </Layout>

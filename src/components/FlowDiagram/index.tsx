@@ -1,11 +1,8 @@
 import React from 'react'
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-import "@popperjs/core/dist/umd/popper.min.js";
 import styled from "styled-components";
-import {Head, Head2, Para} from '../../components/Introduction'
+import {Head, Head2, Para} from '../../components/Introduction' //CREATE GLOBAL TO USE IN DIFFERENT COMPONENTS
 import { BigRightArrow, XSmallArrow } from '../../svg';
-import Threade from '../../assets/Thread.png'
+import Threade from '../../assets/Thread.png' // Use Meaningful words to name your components
 import { circleData} from './data';
 import grp1 from '../../assets/Group1.png'
 import grp2 from '../../assets/Group2.png'
