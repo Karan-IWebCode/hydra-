@@ -1,7 +1,4 @@
 import React from 'react'
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-import "@popperjs/core/dist/umd/popper.min.js";
 import styled from "styled-components";
 
 const Button2 = styled.button`
@@ -24,8 +21,10 @@ const Button2 = styled.button`
     color: black;
   }
 `;
-
-const Primarybtn = ({ text }) => {
+interface IProps{
+  text:string;
+}
+const Primarybtn = ({ text }:IProps) => { // Add type for props
     return(
         <div>
              <Button2 className="btn " type="button">

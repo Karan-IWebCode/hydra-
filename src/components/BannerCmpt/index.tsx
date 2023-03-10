@@ -1,11 +1,8 @@
 import React from 'react'
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-import "@popperjs/core/dist/umd/popper.min.js";
 import styled from "styled-components";
 import Bannerimg from "../../assets/BannerImage.png"
 import BannerGroup from '../../assets/Maskgroup.png'
-import { Head, Head2 } from '../Introduction';
+import { Head, Head2 } from '../Introduction'; // create global components to use in different components
 import { DownArrow } from '../../svg';
 import { relative } from 'path';
 // import "../../../public/static/"

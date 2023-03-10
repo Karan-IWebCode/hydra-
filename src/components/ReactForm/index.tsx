@@ -1,11 +1,8 @@
 import * as React from 'react'
 import Headers from './Header';
 import { useForm } from 'react-hook-form';
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-import "@popperjs/core/dist/umd/popper.min.js";
 import styled from 'styled-components'
-import { Head,Head2 } from '../Introduction';
+import { Head,Head2 } from '../Introduction'; //CREAT GLOBAL COMPONENT TO USE IN DIFFERENT COMPONENTS
 import { FormVector } from '../../svg';
 import Primarybtn from '../ButtonCmpt';
 
