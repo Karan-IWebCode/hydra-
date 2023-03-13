@@ -6,6 +6,7 @@ import LeftBg from '../../assets/Vector 4.png';
 import HeadSectionCpmt from '../HeroSectionCpmt'
 import Primarybtn from '../ButtonCmpt';
 import { ShortRightArrow } from '../../svg';
+import { MobileHeroSectionCmpt } from '../MobileCmpt/MobileHeroSectionCmpt';
 
 const pageStyles = {
   color: "#ffffff",
@@ -111,6 +112,7 @@ const HeroSection = () => {
         </WrapperContainer>
         <div className="row mx-0" >
             <HeadSectionCpmt/>
+            <MobileHeroSectionCmpt/>
         </div>
       </div>
     </>

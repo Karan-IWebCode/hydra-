@@ -49,14 +49,15 @@ const Footer = () => {
   return (
     <div style={pageStyles}>
 
-      <div className='container d-flex w-100' >
-        <div className='col-md-3'>
+      <div className='container d-flex flex-column flex-sm-row  w-100' >
+        <div className='col-md-3 text-center text-sm-left'>
           {/* <Logo/> */}
           <Logo3 src={Logo2}></Logo3>
         </div>
+
         <FooterVerticalLine />
 
-        <div className='d-flex flex-column col-md-3'>
+        <div className='d-none d-sm-flex flex-column col-md-3'>
           {
             list1.map((item, index) => {
               return (
@@ -68,7 +69,7 @@ const Footer = () => {
 
         <FooterVerticalLine />
 
-        <div className='d-flex flex-column col-md-3' style={{ paddingBottom: "79px" }}>
+        <div className='d-none d-sm-flex flex-column  col-md-3' style={{ paddingBottom: "79px" }}>
           {
             list2.map((item, index) => {
               return (
@@ -80,9 +81,9 @@ const Footer = () => {
 
         <FooterVerticalLine />
 
-        <div className='d-flex col-md-3 flex-column'>
-          <Head4>SOCIALIZE WITH HYDRA</Head4>
-          <SvgWrap className="d-flex justify-content-between" style={{ marginTop: "29px", marginBottom: "39px" }}>
+        <div className='d-flex col-12 col-sm-3 flex-column'>
+          <Head4 className='d-flex justify-content-center justify-content-sm-initial'>SOCIALIZE WITH HYDRA</Head4>
+          <SvgWrap className="d-flex flex-column flex-sm-row justify-content-between" style={{ marginTop: "29px", marginBottom: "39px" }}>
             <Facebook />
             <Twitter />
             <Linkedin />
@@ -97,7 +98,7 @@ const Footer = () => {
       </div>
       <div className='container'>
         <Footerline />
-        <Head5 className="d-flex justify-content-center" style={{ marginTop: "49px", paddingBottom: "59px" }}>2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED</Head5>
+        <Head5 className="d-flex justify-content-center text-center text-sm-start" style={{ marginTop: "49px", paddingBottom: "59px" }}>2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED</Head5>
       </div>
 
     </div>

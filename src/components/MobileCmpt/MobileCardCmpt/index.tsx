@@ -58,6 +58,8 @@ padding-right: 35px;
 margin-top: 21px;
 `
 
+
+
 const MobileCardCmpt = () => {
     return (
         <>

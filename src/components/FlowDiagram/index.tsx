@@ -38,11 +38,13 @@ const FlowDiagram = () => {
         <div style={pageStyles}>
             <div className='container'>
                 <div className='row d-flex justify-content-between align-items-baseline' style={{paddingTop:"61px"}}>
-                    <div className='col-5'>
+                    <div className='col-12 col-sm-5 text-center text-sm-start'>
                         <Head>WHY BUILD</Head>
-                        <Head2>WHY HYDRA<span style ={{marginLeft:"30px"}}> <BigRightArrow/></span></Head2>
+                        <Head2 className='justify-content-center justify-content-sm-start'>WHY HYDRA
+                            <span className='d-none d-sm-block' style ={{marginLeft:"30px"}}> <BigRightArrow/></span>
+                        </Head2>
                     </div>
-                    <div className='col-6'>
+                    <div className='d-none d-sm-block col-6'>
                         <Para>Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
                             nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
                             quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
@@ -51,7 +53,7 @@ const FlowDiagram = () => {
                     </div>
                 </div>
 
-                <Circle className='row d-flex justify-content-around' style={{position:"relative",marginTop:"119px",marginBottom:"25px"}}>
+                <Circle className='row d-none d-sm-flex justify-content-around' style={{position:"relative",marginTop:"119px",marginBottom:"25px"}}>
                     <Img src={grp1}/>
                     <Img src={grp2}/>
                     <Img src={grp3}/>

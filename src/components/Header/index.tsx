@@ -97,8 +97,9 @@ const background = {
 };
 
 const Acc = styled.a`
-color:white
+color:white;
 `
+
 const Header = () => {
   return (
     <>

@@ -1,8 +1,5 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.min.js";
-// import "@popperjs/core/dist/umd/popper.min.js";
 import styled from 'styled-components'
 import {HydraIcon, Logo} from "../svg";
 import Layout from "../components/Layout";
@@ -14,6 +11,7 @@ import FlowDiagram from "../components/FlowDiagram";
 import Footer from "../components/Footer";
 import ReactForm from "../components/ReactForm";
 import MobileCardCmpt from "../components/MobileCmpt/MobileCardCmpt";
+import { MobileHeroSectionCmpt } from "../components/MobileCmpt/MobileHeroSectionCmpt";
 const pageStyles = {
   color: "#ffffff",
 

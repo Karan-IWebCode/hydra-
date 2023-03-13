@@ -6,11 +6,11 @@ import {Line, Location, Mail, PhoneCall} from '../../svg/index'
 
 
 
-const InfoLogo = styled.div`
+export const InfoLogo = styled.div`
 margin-right: 20px;
 `
 
-const Overlay = styled.div`
+export const Overlay = styled.div`
 background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
 border-radius: 90px;
@@ -19,7 +19,7 @@ z-index:22;
 
 `
 
-const InfoHeading = styled.div`
+export const InfoHeading = styled.div`
 font-family: Montserrat;
 font-style: normal;
 font-weight: 700;
@@ -28,7 +28,7 @@ line-height: 29px;
 color: #FFFFFF;
 `
 
-const InfoContent = styled.div`
+export const InfoContent = styled.div`
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
@@ -38,7 +38,7 @@ color: #FFFFFF;
 margin-top:9px;
 `
 
-const WrapperContainer = styled.div`
+export const WrapperContainer = styled.div`
   padding-top: 1.5rem;
 
   /* margin-left: 10rem;
@@ -48,7 +48,7 @@ const WrapperContainer = styled.div`
   align-items: center;
 `
 
-const pageStyles = {
+export const pageStyles = {
   color: "#ffffff",
   backgroundColor: "#302C42",
 };
