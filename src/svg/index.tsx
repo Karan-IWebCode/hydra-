@@ -1,5 +1,13 @@
 import React from "react";
 
+export const LeftCircleArrow = ()=>{
+    return(
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.5 21.25L11.25 15L17.5 8.75M3.75 15C3.75 21.2132 8.7868 26.25 15 26.25C21.2132 26.25 26.25 21.2132 26.25 15C26.25 8.7868 21.2132 3.75 15 3.75C8.7868 3.75 3.75 8.7868 3.75 15Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    )
+}
+
 export const Logo = () => {
     return (
         <svg width="102" height="103" viewBox="0 0 102 103" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -332,5 +340,21 @@ export const HeaderGroup = () => {
         </defs>
         </svg>
 
+    )
+}
+
+export const MobileFooterVerticalLine = () => {
+    return(
+        <svg width="290" height="2" viewBox="0 0 290 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.5 1C20.5 1 201.5 1 289.5 1" stroke="url(#paint0_linear_16_134)"/>
+        <defs>
+        <linearGradient id="paint0_linear_16_134" x1="-2.23865" y1="1.00004" x2="-2.23498" y2="-0.0667334" gradientUnits="userSpaceOnUse">
+        <stop offset="0.067901" stop-color="#343045"/>
+        <stop offset="0.348958" stop-color="#C0B7E8"/>
+        <stop offset="0.6875" stop-color="#8176AF"/>
+        <stop offset="0.927153" stop-color="#343045"/>
+        </linearGradient>
+        </defs>
+        </svg>
     )
 }

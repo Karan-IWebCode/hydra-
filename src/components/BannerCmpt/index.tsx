@@ -2,10 +2,20 @@ import React from 'react'
 import styled from "styled-components";
 import Bannerimg from "../../assets/BannerImage.png"
 import BannerGroup from '../../assets/Maskgroup.png'
-import { Head, Head2 } from '../Introduction'; // create global components to use in different components
+
 import { DownArrow } from '../../svg';
 import { relative } from 'path';
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "./styles.css";
 // import "../../../public/static/"
+// import required modules
+import {  Navigation } from "swiper";
+
 import logo1 from "../../assets/Hydra-Tech1 1.png"
 import logo2 from "../../assets/Hydra-Tech2 1.png"
 import logo3 from "../../assets/Hydra-Tech3 1.png"
@@ -20,8 +30,29 @@ const pageStyles = {
     backgroundColor: "#302C42"
 }
 
+const Head = styled.h1`
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+@media (max-width:768px) {
+ font-size:16px;
+ line-height: 19px;
+}
+`
 
-  
+const Head2 = styled.h2`
+font-weight: 300;
+font-size: 36px;
+line-height: 44px;
+display: flex;
+align-items: center;
+justify-content: center;
+@media (max-width:768px) {
+ font-size:24px;
+ line-height: 29px;
+}
+
+`
 const WrapperContainer = styled.div`
   /* margin-left: 10rem;
   margin-right: 10rem; */
@@ -40,7 +71,7 @@ height:310px;
  margin-bottom: 50px;
  background-repeat: no-repeat;
  background-position: center;
-  width: 100%;
+  width: 90%;
  -webkit-border-radius: 215px;
     -moz-border-radius: 215px;
     border-radius: 215px;
@@ -50,6 +81,9 @@ height:310px;
     justify-content: center;
     align-items:center;
     position: relative;
+    @media (max-width:768px) {
+        height:210px;
+}
 `;
 
 const CircularBtn = styled.button`
@@ -83,19 +117,48 @@ const BannerCmpt = () => {
                 <Banner >
                     <Head>TECHNOLOGIES & HARDWARE </Head>
                     <Head2>USED BY HYDRA VR.</Head2>
-                    <CircularBtn type="button" className='btn btn-circle'><DownArrow/></CircularBtn>
+                    <CircularBtn type="button" className='d-none d-sm-block btn btn-circle'><DownArrow/></CircularBtn>
                 </Banner>
                 <div className='container'>
-                    <div className='d-flex justify-content-around'>
+                    <div className='d-none d-sm-flex justify-content-around'>
                         <img src={logo1} style={{objectFit:"contain"}}/>
                         <img src={logo2} style={{objectFit:"contain"}}/>
                         <img src={logo3} style={{objectFit:"contain"}}/>
                         <img src={logo4} style={{objectFit:"contain"}}/>
                     </div>
-
-
                 </div>
+                <div className='container'>
+                    <div className='d-flex d-sm-none justify-content-around'>
+                       
+                        <Swiper
+                navigation={true}
+                modules={[ Navigation]}
+                className="mySwiper"
+                
+                slidesPerView={1}
+                
+                >
+                
+                    
+                <SwiperSlide style={{background:"transparent"}}>
+                    <img src={logo1} style={{objectFit:"contain"}}/>
+                </SwiperSlide>
+                <SwiperSlide style={{background:"transparent"}}>
+                    <img src={logo2} style={{objectFit:"contain"}}/>
+                </SwiperSlide>
+                <SwiperSlide style={{background:"transparent"}}>
+                    <img src={logo3} style={{objectFit:"contain"}}/>
+                </SwiperSlide>
+                <SwiperSlide style={{background:"transparent"}}>
+                    <img src={logo4} style={{objectFit:"contain"}}/>
+                </SwiperSlide>
 
+                
+
+                        </Swiper>
+                        
+                    </div>
+                </div>
 
                 
             </div>

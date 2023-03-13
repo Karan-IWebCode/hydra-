@@ -1,6 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+.swiper-button-prev {
+  background-image: url('../assets/leftCircleArrow.png') !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next {
+  background-image: url('../assets/rightCircleArrow.png') !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+
 

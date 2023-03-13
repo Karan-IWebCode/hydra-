@@ -53,7 +53,9 @@ const ReactForm = () => {
                 <Head style={{paddingTop:"90px",paddingBottom:"30px"}}>
                     JOIN HYDRA
                 </Head>
-                    <FormVector/>
+                    <div className='d-none d-sm-flex'>
+                     <FormVector/>
+                    </div>
                 <Head2 style={{paddingTop:"21px",paddingBottom:"65px"}}> 
                     Let's Build Your VR Experience
                 </Head2>

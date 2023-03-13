@@ -22,7 +22,7 @@ const OverlayData = {
 background: "radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%)" /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
 boxShadow: "0px 4px 4px rgba(192, 183, 232, 0.01)",
 borderRadius: "90px",
-padding: "22px 39px",
+padding: "22px 16px",
 zIndex:"22"
 };
 
@@ -52,18 +52,18 @@ export const MobileHeroSectionCmpt = () => {
             
             >
               <SwiperSlide style={{background:"transparent"}}>
-                <div className='d-flex flex-col align-items-center' >
-                  <InfoLogo>
+                <div className='d-flex align-items-center  justify-content-around' >
+                  <InfoLogo className='ps-2 ms-2'>
                     <Location/>
                   </InfoLogo>
-                  <div style={{fontSize:"14px"}}>
+                  <div style={{fontSize:"14px"}} className='w-75 pe-4 me-2'>
                     
                     <InfoContent>Union st, Seattle, WA 98101,United States</InfoContent>            
                   </div>
                 </div>
               </SwiperSlide>
 
-              <SwiperSlide style={{background:"transparent"}}>
+              <SwiperSlide style={{backgroundColor:"transparent"}}>
                 <div className='d-flex flex-col align-items-center'> 
                   <InfoLogo>
                     <PhoneCall/>

@@ -1,4 +1,4 @@
-import card1 from '../../../assets/Cardimg1.pmg'
+import card1 from '../../../assets/Cardimg1.png'
 import card2 from '../../../assets/Cardimg2.png'
 import card3 from '../../../assets/Cardimg3.png'
 import card4 from '../../../assets/Cardimg4.png'

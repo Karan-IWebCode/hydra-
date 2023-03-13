@@ -1,17 +1,23 @@
-import React from 'react'
+
 import styled from 'styled-components'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from "swiper";
+import React, { useRef, useState } from "react";
+import { HorizontalLine } from '../../../svg';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';  
-
-import ButtonCmpt from '../../ButtonCmpt';
-import { cardData } from './data';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { Link } from 'gatsby';
-import {WrapperContainer} from '../../Header'
-import { HorizontalLine } from '../../../svg';
-import BannerCmpt from '../../BannerCmpt';
+
+import "../MobileFlowDiagram/styles.css";
+
+// import required modules
+import {  Navigation } from "swiper";
+import { cardData } from './data';
+import ButtonCmpt from '../../ButtonCmpt';
+
 
 const pageStyles = {
     color: "#ffffff",
@@ -21,6 +27,14 @@ const pageStyles = {
     paddingTop:"80px"
   }
 
+const WrapperContainer = styled.div`
+  padding-top: 1.5rem;
+  /* margin-left: 10rem;
+  margin-right: 10rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 const Card = styled.div`
 background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
 border-radius: 40px;
@@ -63,63 +77,55 @@ margin-top: 21px;
 const MobileCardCmpt = () => {
     return (
         <>
-        <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
-        <div style={pageStyles}>
-            <WrapperContainer className='container 
-            '
-            >
-                 <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+
+<div style={pageStyles} className='d-block d-sm-none'>
+
+{/* <div className='container'>
         
-      </Swiper>
-                
-            </WrapperContainer>
-        </div>
-        <BannerCmpt/>
-        </Swiper>
+
+    </div> */}
+  
+    <WrapperContainer className="w-100 col d-flex flex-row justify-content-between">
+      <Swiper
+      navigation={true}
+      modules={[ Navigation]}
+      className="mySwiper"
+      
+      slidesPerView={1}
+    
+    > 
+      {
+        cardData.map((item,index) => {
+          return(
+            <SwiperSlide style={{background:"transparent"}}>
+            <div className=''>
+              <Card>
+              
+              {/* Line */}
+              <Img style={{height:"219px",width:"219px"}} src={item.image}/>
+              <Head> {item.title}</Head>
+              <HorizontalLine/>
+              <Para>{item.content}</Para>
+              <Link to={item.link}>
+                  <ButtonCmpt text="TRY IT NOW"  />
+              </Link>
+              </Card>
+            </div>
+            </SwiperSlide>
+          )
+        })
+      
+
+      }
+
+    </Swiper>
+    
+    </WrapperContainer>
+ 
+</div>
         </>
     )
 }
 
 export default MobileCardCmpt;
 
-// import { Swiper, SwiperSlide } from 'swiper/react';
-
-// // Import Swiper styles
-// import 'swiper/css';
-
-// export default () => {
-//   return (
-//     <Swiper
-//       spaceBetween={50}
-//       slidesPerView={3}
-//       onSlideChange={() => console.log('slide change')}
-//       onSwiper={(swiper) => console.log(swiper)}
-//     >
-//       <SwiperSlide>Slide 1</SwiperSlide>
-//       <SwiperSlide>Slide 2</SwiperSlide>
-//       <SwiperSlide>Slide 3</SwiperSlide>
-//       <SwiperSlide>Slide 4</SwiperSlide>
-//       ...
-//     </Swiper>
-//   );
-// };
-                
-                

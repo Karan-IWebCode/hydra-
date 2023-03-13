@@ -12,7 +12,7 @@ export const WrapperContainer = styled.div`
   padding-top: 1.5rem;
   /* margin-left: 10rem;
   margin-right: 10rem; */
-  margin-bottom: 100px;
+  //margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;

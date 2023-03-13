@@ -8,6 +8,7 @@ import grp1 from '../../assets/Group1.png'
 import grp2 from '../../assets/Group2.png'
 import grp3 from '../../assets/Group3.png'
 import grp4 from '../../assets/Group4.png'
+import { MobileFlowDiagram } from '../MobileCmpt/MobileFlowDiagram';
 
 
 const pageStyles = {
@@ -35,6 +36,7 @@ height:200px;
 
 const FlowDiagram = () => {
     return(
+        <>
         <div style={pageStyles}>
             <div className='container'>
                 <div className='row d-flex justify-content-between align-items-baseline' style={{paddingTop:"61px"}}>
@@ -61,7 +63,7 @@ const FlowDiagram = () => {
                 </Circle>
                 
 
-                <div className=' d-flex flex-row justify-content-around'>
+                <div className=' d-none d-sm-flex flex-row justify-content-around'>
                     
                         {
                             circleData.map((item, index) => {
@@ -80,6 +82,10 @@ const FlowDiagram = () => {
                 </div>
             </div>
         </div>
+        <div>
+            <MobileFlowDiagram />
+        </div>
+        </>
     )
 }
 

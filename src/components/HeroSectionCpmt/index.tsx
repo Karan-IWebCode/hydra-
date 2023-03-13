@@ -7,7 +7,7 @@ import {Line, Location, Mail, PhoneCall} from '../../svg/index'
 
 
 export const InfoLogo = styled.div`
-margin-right: 20px;
+/* margin-right: 20px; */
 `
 
 export const Overlay = styled.div`

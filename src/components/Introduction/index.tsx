@@ -23,6 +23,14 @@ export const Head = styled.h1`
 font-weight: 700;
 font-size: 36px;
 line-height: 44px;
+@media (max-width:768px) {
+    font-weight: 300;
+font-size: 26px;
+line-height: 32px;
+/* identical to box height */
+
+text-align: center;
+}
 `
 
 export const Head2 = styled.h2`
@@ -31,6 +39,15 @@ font-size: 36px;
 line-height: 44px;
 display: flex;
 align-items: center;
+justify-content: center;
+@media (max-width:768px) {
+    font-weight: 300;
+font-size: 26px;
+line-height: 32px;
+/* identical to box height */
+
+text-align: center;
+}
 
 `
 export const Para = styled.div`
@@ -62,10 +79,10 @@ const  Introduction = () => {
                 </div>
 
                 <div className="d-flex flex-column flex-sm-row justify-content-between" style={{paddingTop:"104px"}}>
-                    <div className='col-12 col-sm-5'>
+                    <div className='col-10 col-sm-5'>
                         <img className='w-100' src={Introimg} style={{borderRadius: "225px 125px 225px 125px"}}/>
                     </div>
-                    <div className='col-12 col-sm-6 d-flex flex-column justify-content-center'>
+                    <div className='col-10 col-sm-6 d-flex flex-column justify-content-center'>
                         <Head className='d-none d-sm-block'>ABOUT</Head>
                         <Head2 className='d-none d-sm-block'>HYDRA VR <span style ={{marginLeft:"30px", paddingTop:"5px"}}> </span></Head2>
                         <Para style={{paddingTop:"42px",paddingBottom:"28px"}}>Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
@@ -85,9 +102,9 @@ const  Introduction = () => {
                 </div>
 
                 <div className='row d-flex justify-content-between align-items-baseline' style={{paddingTop:"111px"}}>
-                    <div className='d-flex flex-column text-center text-sm-start col-12 col-sm-5'>
+                    <div className='d-flex flex-column text-center text-sm-start col-10 col-sm-5'>
                         <Head>WHY BUILD</Head>
-                        <Head2>WHY HYDRA
+                        <Head2 className='justify-content-center justify-content-sm-start'>WHY HYDRA?
                             <span className="d-none d-sm-block" style ={{marginLeft:"30px"}}> <BigRightArrow/></span>
                         </Head2>
                     </div>
@@ -102,6 +119,7 @@ const  Introduction = () => {
             </div>    
             </WrapperContainer>
         </div>
+        
         </>
     )
 }

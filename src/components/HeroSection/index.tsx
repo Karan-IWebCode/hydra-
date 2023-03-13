@@ -82,8 +82,8 @@ const HeroSection = () => {
     <>
       <div style={pageStyles}>
         <WrapperContainer className='container'>
-          <div className='row  d-flex justify-content-between w-100'>
-            <div className="col-md-5" style={{ marginTop: "4rem" }}>
+          <div className='row  d-flex flex-row-reverse flex-sm-row justify-content-between w-100'>
+            <div className="col-sm-5" style={{ marginTop: "4rem" }}>
               <img className='d-none d-sm-block'src={LeftBg} style={{ position: "absolute", top: 180, left: 150 }} />
               <Heading className=''>Dive <SelectedWhite>into the Depths</SelectedWhite></Heading>
               <Heading><SelectedWhite>Of</SelectedWhite> Virtual Reality</Heading>
@@ -102,18 +102,24 @@ const HeroSection = () => {
 
 
 
-            <Backg className="col-md-5">
+            <Backg className="col-12 col-sm-5">
               <img src={GroupBg} style={{ position: 'absolute', top: '4%', right: '14%', zIndex: -1 }} />
               <img src={HeadImage} />
             </Backg>
 
 
           </div>
+          
         </WrapperContainer>
-        <div className="row mx-0" >
-            <HeadSectionCpmt/>
+      
+        <div className='row mx-0 bg-danger d-none d-md-block'>
+          <HeadSectionCpmt/> 
+        </div>
+        <div className="row mx-0 d-md-none" >
+            
             <MobileHeroSectionCmpt/>
         </div>
+        
       </div>
     </>
   )
