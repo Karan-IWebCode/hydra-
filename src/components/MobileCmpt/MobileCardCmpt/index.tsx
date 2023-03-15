@@ -24,16 +24,20 @@ const pageStyles = {
     fontFamily: 'Montserrat',
     fontStyle: 'normal',
     backgroundColor: "#302C42",
-    paddingTop:"80px"
+    
   }
 
 const WrapperContainer = styled.div`
-  padding-top: 1.5rem;
+  padding-top: 80px;
+  /* padding-top: 1.5rem; */
   /* margin-left: 10rem;
   margin-right: 10rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width:768px) {
+  padding-top: 26px;
+}
 `;
 const Card = styled.div`
 background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);

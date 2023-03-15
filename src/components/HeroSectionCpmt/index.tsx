@@ -57,8 +57,8 @@ const HeroSection = () => {
   return (
     <>
       <div style={pageStyles} >
-          <WrapperContainer className="container">
-            <Overlay className="col d-flex flex-row justify-content-between">
+          <WrapperContainer className="container" >
+            <Overlay className="col d-flex flex-row justify-content-between" style={{zIndex:24}}>
               <div className='d-flex flex-col align-items-center'>
                 <InfoLogo>
                   <Location/>

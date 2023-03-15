@@ -64,14 +64,15 @@ const WrapperContainer = styled.div`
 
 const Banner = styled.div`
  background-image: url(${BannerGroup});
+
  /* height: 60vh; */
 height:310px;
- /* margin-left: 10rem;
- margin-right: 10rem; */
+ margin-left: auto ;
+ margin-right: auto;
  margin-bottom: 50px;
  background-repeat: no-repeat;
  background-position: center;
-  width: 90%;
+  width: 100%;
  -webkit-border-radius: 215px;
     -moz-border-radius: 215px;
     border-radius: 215px;
@@ -83,6 +84,7 @@ height:310px;
     position: relative;
     @media (max-width:768px) {
         height:210px;
+        width:90%;
 }
 `;
 
@@ -141,16 +143,19 @@ const BannerCmpt = () => {
                 
                     
                 <SwiperSlide style={{background:"transparent"}}>
-                    <img src={logo1} style={{objectFit:"contain"}}/>
+                <div className='w-75'><img src={logo1} style={{objectFit:"contain"}}/></div>
                 </SwiperSlide>
+
                 <SwiperSlide style={{background:"transparent"}}>
-                    <img src={logo2} style={{objectFit:"contain"}}/>
+                <div className='w-75'><img src={logo2} style={{objectFit:"contain"}}/></div>
                 </SwiperSlide>
+
                 <SwiperSlide style={{background:"transparent"}}>
-                    <img src={logo3} style={{objectFit:"contain"}}/>
+                <div className='w-75'><img src={logo3} style={{objectFit:"contain"}}/></div>
                 </SwiperSlide>
+
                 <SwiperSlide style={{background:"transparent"}}>
-                    <img src={logo4} style={{objectFit:"contain"}}/>
+                <div className='w-75'><img src={logo4} style={{objectFit:"contain"}}/></div>
                 </SwiperSlide>
 
                 

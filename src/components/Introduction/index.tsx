@@ -7,7 +7,10 @@ import ButtonCmpt from '../ButtonCmpt';
 const pageStyles = {
     color: "#ffffff",
     backgroundColor: "#302C42",
-    paddingTop: "91px"
+    paddingTop: "91px",
+//   @media (maxWidth:"768px") {
+//     paddingTop: "37px";
+// }
   };
 
   const WrapperContainer = styled.div`
@@ -57,6 +60,22 @@ font-weight: 400;
 font-size: 16px;
 line-height: 20px;
 color: #FFFFFF;
+@media (max-width:768px) {
+    font-size: 12px;
+`
+
+const Componentpad = styled.div`
+    padding-top: 104px;
+    @media (max-width:768px) {
+    padding-top: 36px;
+}
+`
+
+const Componentpad2 = styled.div`
+     padding-top:111px;
+     @media (max-width:768px) {
+    padding-top: 36px;
+}
 `
 const  Introduction = () => {
     return(
@@ -78,14 +97,17 @@ const  Introduction = () => {
                     </div>
                 </div>
 
-                <div className="d-flex flex-column flex-sm-row justify-content-between" style={{paddingTop:"104px"}}>
-                    <div className='col-10 col-sm-5'>
+                <Componentpad className="d-flex flex-column flex-sm-row justify-content-between" style={{}}>
+                    <div className='d-none d-sm-block  px-2 col-sm-5'>
                         <img className='w-100' src={Introimg} style={{borderRadius: "225px 125px 225px 125px"}}/>
                     </div>
-                    <div className='col-10 col-sm-6 d-flex flex-column justify-content-center'>
+                    <div className='d-block d-sm-none col-12 px-2 '>
+                        <img className='w-100' src={Introimg} style={{borderRadius: "150px 75px 150px 75px"}}/>
+                    </div>
+                    <div className='col-12 px-2 col-sm-6 d-flex flex-column justify-content-center'>
                         <Head className='d-none d-sm-block'>ABOUT</Head>
                         <Head2 className='d-none d-sm-block'>HYDRA VR <span style ={{marginLeft:"30px", paddingTop:"5px"}}> </span></Head2>
-                        <Para style={{paddingTop:"42px",paddingBottom:"28px"}}>Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
+                        <Para className='' style={{paddingTop:"42px",paddingBottom:"28px"}}>Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
                             urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida 
                             dUSED BY HYDRA VR.ictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. 
                             Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet 
@@ -99,9 +121,9 @@ const  Introduction = () => {
                     </div>
 
                     
-                </div>
+                </Componentpad>
 
-                <div className='row d-flex justify-content-between align-items-baseline' style={{paddingTop:"111px"}}>
+                <Componentpad2 className='row d-flex justify-content-center justify-content-sm-between align-items-baseline' >
                     <div className='d-flex flex-column text-center text-sm-start col-10 col-sm-5'>
                         <Head>WHY BUILD</Head>
                         <Head2 className='justify-content-center justify-content-sm-start'>WHY HYDRA?
@@ -115,7 +137,7 @@ const  Introduction = () => {
                             lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
                         </Para>
                     </div>
-                </div>
+                </Componentpad2>
             </div>    
             </WrapperContainer>
         </div>

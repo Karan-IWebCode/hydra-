@@ -16,6 +16,14 @@ const pageStyles = {
     fontStyle: "normal"
   };
 
+const Space = {
+    marginLeft:"12px",
+    // @media (max-width:425px) {
+    //     font-size: 24px;
+    //     line-height: 29px;  
+    //     text-align: center;
+    //   }
+}
 const FormStyle = styled.div`
     background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -24,6 +32,10 @@ const FormStyle = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    @media (max-width:425px) {
+        border-radius: 40px;
+      }
+
 ` 
 
 const Input =  styled.input`
@@ -60,16 +72,16 @@ const ReactForm = () => {
                     Let's Build Your VR Experience
                 </Head2>
 
-                <form className='w-100 px-5' onSubmit={handleSubmit((data)=> {
+                <form className='w-100 px-3 px-sm-5' onSubmit={handleSubmit((data)=> {
                 console.log(data);
             })}>
-                <div className="d-flex ">
-                    <Input {...register("firstName",{ required: true})} placeholder="First Name" className='w-50' />
-                    <Input {...register("lastName",{required: true})} placeholder="Last Name" className='w-50' style={{marginLeft:"12px"}}/>
+                <div className="d-flex flex-column flex-sm-row ">
+                    <Input {...register("firstName",{ required: true})} placeholder="First Name" className='w-100 w-sm-50'  />
+                    <Input {...register("lastName",{required: true})} placeholder="Last Name" className='w-100 w-sm-50 ms-sm-3'  />
                 </div>
-                <div className='d-flex'>
-                    <Input {...register("email",{ required: true})} placeholder="Email" className='w-50' />
-                    <Input {...register("phone ",{required: true})} placeholder="Phone Number" className='w-50' style={{marginLeft:"12px"}}/>
+                <div className='d-flex flex-column flex-sm-row'>
+                    <Input {...register("email",{ required: true})} placeholder="Email" className='w-100 w-sm-50' />
+                    <Input {...register("phone ",{required: true})} placeholder="Phone Number" className='w-100 w-sm-50 ms-sm-3' />
                 </div>
                 <Input {...register("subject",{ required: true})} placeholder="Subject" className='w-100' />
                 <Textarea {...register("subject",{ required: true})} placeholder="Tell Us Something" rows={10} className='w-100' />

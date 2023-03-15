@@ -28,8 +28,12 @@ font-weight: 700;
 font-size: 14px;
 line-height: 17px;
 /* identical to box height */
-
-letter-spacing: 0.13em;`
+letter-spacing: 0.13em;
+@media (max-width:768px) {
+  line-height: 32px;
+  margin: 0px 10px;
+}
+`
 
 const Logo3 = styled.img`
 width:185px;
@@ -84,7 +88,7 @@ const Footer = () => {
 
         <div className='d-none d-sm-block'><FooterVerticalLine /></div>
 
-        <div className='d-flex col-12 col-sm-2 flex-column'>
+        <div className='d-flex px-2 col-12 col-sm-2 flex-column'>
           <Head4 className='d-flex justify-content-center justify-content-sm-initial'>SOCIALIZE WITH HYDRA</Head4>
           <SvgWrap className="d-flex flex-row justify-content-between" style={{ marginTop: "29px", marginBottom: "39px" }}>
             <Facebook />
@@ -100,7 +104,7 @@ const Footer = () => {
 
       </div>
       <div className='container'>
-        <div className='d-block d-sm-none'>
+        <div className='mt-4 d-block d-sm-none text-center'>
           <MobileFooterVerticalLine/>
         </div>
         <div className='d-none d-sm-block'>

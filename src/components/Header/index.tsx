@@ -2,12 +2,12 @@ import * as React from "react";
 
 
 import styled from "styled-components";
-import { HeaderGroup, Logo } from "../../svg";
+import { Hamburger, HeaderGroup, Logo } from "../../svg";
 import { HydraGroup } from "../../svg";
 
 const pageStyles = {
   color: "#ffffff",
-  
+
   backgroundColor: "#302C42",
 };
 const main = {
@@ -61,8 +61,8 @@ const Button = styled.button`
 }
 `;
 const Button2 = styled.button`
-  margin: 0.5rem;
-  margin-left:40px;
+  /* margin: 0.5rem; */
+  /* margin-left:40px; */
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
@@ -103,135 +103,17 @@ color:white;
 const Header = () => {
   return (
     <>
-      {/* <header className="  " style={pageStyles}>
-        <div className="container d-flex p-3 justify-content-between">
-          <div className="m-3">
-            <Logo />
 
-            <span className="m-2"></span>
-            <HydraGroup />
-          </div>
-          <div className="d-flex align-items-center">
-            <Navbar className="navbar navbar-expand-lg navbar-light ">
-              <div className="container-fluid">
-                <button
-                  className="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarTogglerDemo03"
-                  aria-controls="navbarTogglerDemo03"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span className="navbar-toggler-icon"></span>
-                </button>
-
-                <div
-                  className="collapse navbar-collapse"
-                  id="navbarTogglerDemo03"
-                >
-                  <div className="d-flex">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li className="nav-item">
-                        <HeaderLink
-                          className="nav-link"
-                          aria-current="page"
-                          href="#"
-                        >
-                          ABOUT
-                        </HeaderLink>
-                      </li>
-                      <li className="nav-item">
-                        <HeaderLink
-                          className="nav-link "
-                          aria-current="page"
-                          href="#"
-                        >
-                          SERVICES
-                        </HeaderLink>
-                      </li>
-                      <li className="nav-item">
-                        <HeaderLink
-                          className="nav-link"
-                          aria-current="page"
-                          href="#"
-                        >
-                          TECHNOLOGIES
-                        </HeaderLink>
-                      </li>
-                      <li className="nav-item">
-                        <HeaderLink
-                          className=" nav-link"
-                          aria-current="page"
-                          href="#"
-                        >
-                          HOW TO
-                        </HeaderLink>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </Navbar>
-          </div>
-          <div className="d-flex align-items-center"></div>
-        </div>
-      </header> */}
-
-      {/* New Header */}
-
-      {/* <div style={pageStyles}>
-        <WrapperContainer className="container">
-          <div>
-            <div className="m-3">
-              <Logo />
-
-              <span className="m-2"></span>
-              <HydraGroup />
-            </div>
-          </div>
-          <div>
-           
-              <ul className="navbar-nav d-flex flex-row" style={{fontFamily: "Montserrat", fontStyle: "normal",fontWeight: "700",fontSize: "12px"}}>
-                <li className="nav-item" style={{marginLeft:"42px"}}>
-                  <a className="nav-link active" aria-current="page" href="#">ABOUT</a>
-                </li>
-                <li className="nav-item" style={{marginLeft:"42px"}}>
-                  <a className="nav-link" href="#">SERVICES</a>
-                </li>
-                <li className="nav-item" style={{marginLeft:"42px"}}>
-                  <a className="nav-link" href="#">TECHNOLOGIES</a>
-                </li>
-                <li className="nav-item" style={{marginLeft:"42px"}}>
-                  <a className="nav-link disabled" href="#">HOW TO</a>
-                </li>
-              </ul>
-           
-          </div>
-          <div>
-            <h1>
-              <form className="d-flex">
-                <Button className="btn " type="submit">
-                  CONTACT US
-                </Button>
-                <Button2 className="btn " type="submit">
-                  JOIN HYDRA
-                </Button2>
-              </form>
-            </h1>
-          </div>
-        </WrapperContainer>
-      </div> */}
 
       <div style={pageStyles}>
         <WrapperContainer className="container">
-        
-        <div>
+
+          {/* <div>
           <HeaderGroup />
         </div>
         
         <nav className="navbar navbar-expand-lg bg-body-tertiary w-100">
-  <div className="container p-0" style={{zIndex:"22"}} >
+  <div className="container p-0 d-flex justify-content-end" style={{zIndex:"22"}} >
     
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -247,7 +129,7 @@ const Header = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mb-2 mb-lg-0" style={{fontFamily: "Montserrat", fontStyle: "normal",fontWeight: "700",fontSize: "12px"}}>
        
-        <li className="nav-item" style={{marginLeft:"42px"}}>
+        <li className="nav-item " style={{marginLeft:"42px"}}>
           <Acc className="nav-link " aria-current="page" href="#">ABOUT</Acc>
         </li>
         <li className="nav-item" style={{marginLeft:"42px"}}>
@@ -266,12 +148,12 @@ const Header = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav  mb-2 mb-lg-0">
        
-        <li className="nav-item" style={{marginLeft:"42px"}}>
+        <li className="nav-item ps-0 ps-sm-4" style={{}}>
           <Button className="btn " type="submit">
             CONTACT US
           </Button>
         </li>
-        <li className="nav-item" style={{marginLeft:"42px"}}>
+        <li className="nav-item " >
           <Button2 className="btn " type="submit">
                   JOIN HYDRA
           </Button2> 
@@ -282,7 +164,45 @@ const Header = () => {
       
     </div>
   </div>
-</nav>
+        </nav> */}
+
+          <nav className="navbar navbar-expand-lg bg-body-tertiary w-100">
+            <div className="container p-0">
+              <a className="navbar-brand me-md-5" href="#"><HeaderGroup /></a>
+              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon" style={{color:"transparent",backgroundImage:"none"}}><Hamburger/></span>
+              </button>
+              <div className="collapse navbar-collapse" style={{position:'relative', zIndex:'23'}} id="navbarText">
+                <ul className="navbar-nav me-auto ms-md-5 mb-2 mb-lg-0 align-items-center w-100 justify-content-between">
+                  <li className="nav-item">
+                    <Acc className="nav-link " aria-current="page" href="#">ABOUT</Acc>
+                  </li>
+                  <li className="nav-item">
+                    <Acc className="nav-link" href="#">SERVICES</Acc>
+                  </li>
+                  <li className="nav-item">
+                    <Acc className="nav-link" href="#">TECHNOLOGIES</Acc>
+                  </li>
+                  <li className="nav-item">
+                    <Acc className="nav-link" href="#">HOW TO</Acc>
+                  </li>
+                  <li className="nav-item ">
+                    <Button className="btn " type="submit">
+                      CONTACT US
+                    </Button>
+                  </li>
+                  <li className="nav-item ">
+                    <Button2 className="btn " type="submit">
+                      JOIN HYDRA
+                    </Button2>
+                  </li>
+                </ul>
+                <span className="navbar-text">
+
+                </span>
+              </div>
+            </div>
+          </nav>
         </WrapperContainer>
       </div>
 

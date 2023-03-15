@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import HeadImage from '../../assets/HeadImage.png';
+import HeadImage2 from '../../assets/HeadImage2.png'
 import GroupBg from '../../assets/bgHero.png';
 import LeftBg from '../../assets/Vector 4.png';
 import HeadSectionCpmt from '../HeroSectionCpmt'
@@ -29,6 +30,8 @@ text-fill-color: transparent;
   font-size: 24px;
   line-height: 29px;  
   text-align: center;
+  position: relative;
+  z-index: 23;
 }
 `
 
@@ -55,6 +58,11 @@ const WrapperContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 83px;
+  @media (max-width:768px) {
+    margin-bottom: 50px;
+
+}
 `;
 
 const RightCol = styled.div`
@@ -74,48 +82,58 @@ z-index: 12;
     width: 100%;
   }
 }
-
 `
+const Componentpad = styled.div`
+  padding-top: 83px;
+  @media (max-width:768px) {
+    padding-top: 26px;
+}
+`
+
 const HeroSection = () => {
   return (
 
     <>
       <div style={pageStyles}>
         <WrapperContainer className='container'>
-          <div className='row  d-flex flex-row-reverse flex-sm-row justify-content-between w-100'>
-            <div className="col-sm-5" style={{ marginTop: "4rem" }}>
+          <div className='row  d-flex  flex-row-reverse flex-sm-row justify-content-between w-100' style={{zIndex:23}}>
+            <div className="col-sm-5 order-2 order-sm-1 " style={{ marginTop: "4rem" }}>
               <img className='d-none d-sm-block'src={LeftBg} style={{ position: "absolute", top: 180, left: 150 }} />
               <Heading className=''>Dive <SelectedWhite>into the Depths</SelectedWhite></Heading>
               <Heading><SelectedWhite>Of</SelectedWhite> Virtual Reality</Heading>
               <Content className='d-none d-sm-block'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris eros in vitae
               </Content>
-              <div className='d-flex flex-row' style={{ paddingTop: "83px", alignItems: "baseline" }}>
+              <Componentpad className='d-flex flex-row justify-content-center justify-content-sm-start' style={{ alignItems: "baseline" }}>
                 <Primarybtn text="Build Your World" />
                 <div className="d-none d-sm-block" style={{ marginLeft: "40px" }}>
                   <ShortRightArrow />
                 </div>
 
-              </div>
+              </Componentpad>
             </div>
 
 
 
 
-            <Backg className="col-12 col-sm-5">
+            <Backg className="d-none d-sm-block col-12 col-sm-5 order-1 order-sm-2">
               <img src={GroupBg} style={{ position: 'absolute', top: '4%', right: '14%', zIndex: -1 }} />
-              <img src={HeadImage} />
+              <img className='' src={HeadImage} />
             </Backg>
 
+            <Backg className="d-block d-sm-none col-12 col-sm-5 order-1 order-sm-2 text-center" style={{position:'relative'}}>
+              <img src={GroupBg} style={{ position: 'absolute', top: '-22%', right: '-3%', zIndex: -1 }} />
+              <img className='' style={{width:"90%"}} src={HeadImage2} />
+            </Backg>
 
           </div>
           
         </WrapperContainer>
       
-        <div className='row mx-0 bg-danger d-none d-md-block'>
+        <div className='row mx-0 bg-danger d-none d-sm-block'>
           <HeadSectionCpmt/> 
         </div>
-        <div className="row mx-0 d-md-none" >
+        <div className="row mx-0 d-sm-none" >
             
             <MobileHeroSectionCmpt/>
         </div>
