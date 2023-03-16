@@ -119,10 +119,10 @@ const BannerCmpt = () => {
                 <Banner >
                     <Head>TECHNOLOGIES & HARDWARE </Head>
                     <Head2>USED BY HYDRA VR.</Head2>
-                    <CircularBtn type="button" className='d-none d-sm-block btn btn-circle'><DownArrow/></CircularBtn>
+                    <CircularBtn type="button" className='d-none d-md-block btn btn-circle'><DownArrow/></CircularBtn>
                 </Banner>
                 <div className='container'>
-                    <div className='d-none d-sm-flex justify-content-around'>
+                    <div className='d-none d-md-flex justify-content-around'>
                         <img src={logo1} style={{objectFit:"contain"}}/>
                         <img src={logo2} style={{objectFit:"contain"}}/>
                         <img src={logo3} style={{objectFit:"contain"}}/>
@@ -130,7 +130,7 @@ const BannerCmpt = () => {
                     </div>
                 </div>
                 <div className='container'>
-                    <div className='d-flex d-sm-none justify-content-around'>
+                    <div className='d-flex d-md-none justify-content-around'>
                        
                         <Swiper
                 navigation={true}

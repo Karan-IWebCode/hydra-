@@ -96,17 +96,17 @@ const HeroSection = () => {
     <>
       <div style={pageStyles}>
         <WrapperContainer className='container'>
-          <div className='row  d-flex  flex-row-reverse flex-sm-row justify-content-between w-100' style={{zIndex:23}}>
-            <div className="col-sm-5 order-2 order-sm-1 " style={{ marginTop: "4rem" }}>
-              <img className='d-none d-sm-block'src={LeftBg} style={{ position: "absolute", top: 180, left: 150 }} />
+          <div className='row  d-flex  flex-row-reverse flex-md-row justify-content-between w-100' style={{zIndex:23}}>
+            <div className="col-md-5 order-2 order-md-1 " style={{ marginTop: "4rem",zIndex:"23" }}>
+              <img className='d-none d-md-block'src={LeftBg} style={{ position: "absolute", top: 180, left: 150 }} />
               <Heading className=''>Dive <SelectedWhite>into the Depths</SelectedWhite></Heading>
               <Heading><SelectedWhite>Of</SelectedWhite> Virtual Reality</Heading>
-              <Content className='d-none d-sm-block'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris eros in vitae
+              <Content className='d-none d-md-block'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiumdod tempor incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris eros in vitae
               </Content>
-              <Componentpad className='d-flex flex-row justify-content-center justify-content-sm-start' style={{ alignItems: "baseline" }}>
+              <Componentpad className='d-flex flex-row justify-content-center justify-content-md-start' style={{ alignItems: "baseline" }}>
                 <Primarybtn text="Build Your World" />
-                <div className="d-none d-sm-block" style={{ marginLeft: "40px" }}>
+                <div className="d-none d-md-block" style={{ marginLeft: "40px" }}>
                   <ShortRightArrow />
                 </div>
 
@@ -116,12 +116,12 @@ const HeroSection = () => {
 
 
 
-            <Backg className="d-none d-sm-block col-12 col-sm-5 order-1 order-sm-2">
+            <Backg className="d-none d-md-block col-12 col-md-5 order-1 order-md-2">
               <img src={GroupBg} style={{ position: 'absolute', top: '4%', right: '14%', zIndex: -1 }} />
               <img className='' src={HeadImage} />
             </Backg>
 
-            <Backg className="d-block d-sm-none col-12 col-sm-5 order-1 order-sm-2 text-center" style={{position:'relative'}}>
+            <Backg className="d-block d-md-none col-12 col-md-5 order-1 order-md-2 text-center" style={{position:'relative'}}>
               <img src={GroupBg} style={{ position: 'absolute', top: '-22%', right: '-3%', zIndex: -1 }} />
               <img className='' style={{width:"90%"}} src={HeadImage2} />
             </Backg>
@@ -130,10 +130,10 @@ const HeroSection = () => {
           
         </WrapperContainer>
       
-        <div className='row mx-0 bg-danger d-none d-sm-block'>
+        <div className='row mx-0 bg-danger d-none d-md-block'>
           <HeadSectionCpmt/> 
         </div>
-        <div className="row mx-0 d-sm-none" >
+        <div className="row mx-0 d-md-none" >
             
             <MobileHeroSectionCmpt/>
         </div>

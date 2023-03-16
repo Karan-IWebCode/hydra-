@@ -44,6 +44,7 @@ padding: 21px 31px;
 border: 2px solid #ffffff;
 border-radius:40px;
 margin-bottom: 39px;
+color:white;
 `
 
 const Textarea = styled.textarea`
@@ -52,6 +53,7 @@ padding: 21px 31px;
 border: 2px solid #ffffff;
 border-radius:40px;
 margin-bottom: 39px;
+color:white;
 `
 const ReactForm = () => {
 

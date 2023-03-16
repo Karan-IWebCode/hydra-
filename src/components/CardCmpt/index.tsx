@@ -56,7 +56,7 @@ margin-top: 21px;
 const CardCmpt = () => {
     return (
         <>
-        <div  className='d-none d-sm-block' style={pageStyles} >
+        <div  className='d-none d-md-block' style={pageStyles} >
             <WrapperContainer className='container'>
                 
                 {

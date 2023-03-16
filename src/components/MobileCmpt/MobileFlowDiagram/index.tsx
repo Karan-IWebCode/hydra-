@@ -51,7 +51,7 @@ const Overlay = styled.div``
 export const MobileFlowDiagram = () => {
     return(
         <>
-        <div style={pageStyles} className='d-block d-sm-none'>
+        <div style={pageStyles} className='d-block d-md-none '>
 
         {/* <div className='container'>
                 

@@ -62,6 +62,7 @@ line-height: 20px;
 color: #FFFFFF;
 @media (max-width:768px) {
     font-size: 12px;
+}
 `
 
 const Componentpad = styled.div`
@@ -84,11 +85,11 @@ const  Introduction = () => {
             <WrapperContainer className='container'>
             <div className=' mx-0 d-flex flex-column'>
                 <div className='row mx-0 d-flex justify-content-center align-items-baseline'>
-                    <div className=' col-sm-5'>
+                    <div className=' col-md-5'>
                         <Head>INTRODUCTION</Head>
-                        <Head2> TO HYDRA VR<span className="d-none d-sm-block"style ={{marginLeft:"30px"}}> <BigRightArrow/></span></Head2>
+                        <Head2> TO HYDRA VR<span className="d-none d-md-block"style ={{marginLeft:"30px"}}> <BigRightArrow/></span></Head2>
                     </div>
-                    <div className='d-none d-sm-block col-6'>
+                    <div className='d-none d-md-block col-6'>
                         <Para>Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
                             nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
                             quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
@@ -97,16 +98,16 @@ const  Introduction = () => {
                     </div>
                 </div>
 
-                <Componentpad className="d-flex flex-column flex-sm-row justify-content-between" style={{}}>
-                    <div className='d-none d-sm-block  px-2 col-sm-5'>
+                <Componentpad className="d-flex flex-column flex-md-row justify-content-between" style={{}}>
+                    <div className='d-none d-md-block  px-2 col-md-5'>
                         <img className='w-100' src={Introimg} style={{borderRadius: "225px 125px 225px 125px"}}/>
                     </div>
-                    <div className='d-block d-sm-none col-12 px-2 '>
+                    <div className='d-block d-md-none col-12 px-2 '>
                         <img className='w-100' src={Introimg} style={{borderRadius: "150px 75px 150px 75px"}}/>
                     </div>
-                    <div className='col-12 px-2 col-sm-6 d-flex flex-column justify-content-center'>
-                        <Head className='d-none d-sm-block'>ABOUT</Head>
-                        <Head2 className='d-none d-sm-block'>HYDRA VR <span style ={{marginLeft:"30px", paddingTop:"5px"}}> </span></Head2>
+                    <div className='col-12 px-2 col-md-6 d-flex flex-column justify-content-center'>
+                        <Head className='d-none d-md-block'>ABOUT</Head>
+                        <Head2 className='d-none d-md-block'>HYDRA VR <span style ={{marginLeft:"30px", paddingTop:"5px"}}> </span></Head2>
                         <Para className='' style={{paddingTop:"42px",paddingBottom:"28px"}}>Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
                             urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida 
                             dUSED BY HYDRA VR.ictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. 
@@ -123,14 +124,14 @@ const  Introduction = () => {
                     
                 </Componentpad>
 
-                <Componentpad2 className='row d-flex justify-content-center justify-content-sm-between align-items-baseline' >
-                    <div className='d-flex flex-column text-center text-sm-start col-10 col-sm-5'>
+                <Componentpad2 className='row d-flex justify-content-center justify-content-md-between align-items-baseline' >
+                    <div className='d-flex flex-column text-center text-md-start col-10 col-md-5'>
                         <Head>WHY BUILD</Head>
-                        <Head2 className='justify-content-center justify-content-sm-start'>WHY HYDRA?
-                            <span className="d-none d-sm-block" style ={{marginLeft:"30px"}}> <BigRightArrow/></span>
+                        <Head2 className='justify-content-center justify-content-md-start'>WHY HYDRA?
+                            <span className="d-none d-md-block" style ={{marginLeft:"30px"}}> <BigRightArrow/></span>
                         </Head2>
                     </div>
-                    <div className='d-none d-sm-block col-6'>
+                    <div className='d-none d-md-block col-6'>
                         <Para>Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
                             nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
                             quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 

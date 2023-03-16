@@ -56,15 +56,15 @@ const Footer = () => {
   return (
     <div style={pageStyles}>
 
-      <div className='container d-flex flex-column flex-sm-row  w-100 justify-content-between' >
-        <div className='col-sm-2 text-center text-sm-left'>
+      <div className='container d-flex flex-column flex-md-row  w-100 justify-content-between' >
+        <div className='col-md-2 text-center text-md-left'>
           {/* <Logo/> */}
           <Logo3 src={Logo2}></Logo3>
         </div>
 
-        <div className='d-none d-sm-block'><FooterVerticalLine /></div>
+        <div className='d-none d-md-block'><FooterVerticalLine /></div>
 
-        <div className='d-none d-sm-flex flex-column col-sm-2'>
+        <div className='d-none d-md-flex flex-column col-md-2'>
           {
             list1.map((item, index) => {
               return (
@@ -74,9 +74,9 @@ const Footer = () => {
           }
         </div>
 
-        <div className='d-none d-sm-block'><FooterVerticalLine /></div>
+        <div className='d-none d-md-block'><FooterVerticalLine /></div>
 
-        <div className='d-none d-sm-flex flex-column  col-sm-2' style={{ paddingBottom: "79px" }}>
+        <div className='d-none d-md-flex flex-column  col-md-2' style={{ paddingBottom: "79px" }}>
           {
             list2.map((item, index) => {
               return (
@@ -86,10 +86,10 @@ const Footer = () => {
           }
         </div>
 
-        <div className='d-none d-sm-block'><FooterVerticalLine /></div>
+        <div className='d-none d-md-block'><FooterVerticalLine /></div>
 
-        <div className='d-flex px-2 col-12 col-sm-2 flex-column'>
-          <Head4 className='d-flex justify-content-center justify-content-sm-initial'>SOCIALIZE WITH HYDRA</Head4>
+        <div className='d-flex px-2 col-12 col-md-2 flex-column'>
+          <Head4 className='d-flex justify-content-center justify-content-md-initial'>SOCIALIZE WITH HYDRA</Head4>
           <SvgWrap className="d-flex flex-row justify-content-between" style={{ marginTop: "29px", marginBottom: "39px" }}>
             <Facebook />
             <Twitter />
@@ -104,13 +104,13 @@ const Footer = () => {
 
       </div>
       <div className='container'>
-        <div className='mt-4 d-block d-sm-none text-center'>
+        <div className='mt-4 d-block d-md-none text-center'>
           <MobileFooterVerticalLine/>
         </div>
-        <div className='d-none d-sm-block'>
+        <div className='d-none d-md-block'>
           <Footerline />
         </div>
-        <Head5 className="d-flex justify-content-center text-center text-sm-start" style={{ marginTop: "49px", paddingBottom: "59px" }}>2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED</Head5>
+        <Head5 className="d-flex justify-content-center text-center text-md-start" style={{ marginTop: "49px", paddingBottom: "59px" }}>2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED</Head5>
       </div>
 
     </div>
