@@ -26,9 +26,9 @@ background-clip: text;
 text-fill-color: transparent;
 -webkit-background-clip: text;
 -webkit-text-fill-color:transparent;
-@media (max-width:425px) {
+@media (max-width:768px) {
   font-size: 24px;
-  line-height: 29px;  
+  line-height: 44px;  
   text-align: center;
   position: relative;
   z-index: 23;

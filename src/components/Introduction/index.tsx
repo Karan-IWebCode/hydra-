@@ -84,9 +84,9 @@ const  Introduction = () => {
         <div style={pageStyles}>
             <WrapperContainer className='container'>
             <div className=' mx-0 d-flex flex-column'>
-                <div className='row mx-0 d-flex justify-content-center align-items-baseline'>
+                <div className='row mx-0 d-flex justify-content-between'>
                     <div className=' col-md-5'>
-                        <Head>INTRODUCTION</Head>
+                        <Head className='mb-0'>INTRODUCTION</Head>
                         <Head2> TO HYDRA VR<span className="d-none d-md-block"style ={{marginLeft:"30px"}}> <BigRightArrow/></span></Head2>
                     </div>
                     <div className='d-none d-md-block col-6'>
@@ -118,7 +118,10 @@ const  Introduction = () => {
                             retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
                             n tempor.
                         </Para>
-                        <ButtonCmpt text="LET'S GET IN TOUCH"/>
+                        <div className='w-100 w-md-50 text-center text-md-left'>
+                            <ButtonCmpt text="LET'S GET IN TOUCH"/>
+                        </div>
+                        
                     </div>
 
                     
@@ -126,7 +129,7 @@ const  Introduction = () => {
 
                 <Componentpad2 className='row d-flex justify-content-center justify-content-md-between align-items-baseline' >
                     <div className='d-flex flex-column text-center text-md-start col-10 col-md-5'>
-                        <Head>WHY BUILD</Head>
+                        <Head className='mb-0'>WHY BUILD</Head>
                         <Head2 className='justify-content-center justify-content-md-start'>WHY HYDRA?
                             <span className="d-none d-md-block" style ={{marginLeft:"30px"}}> <BigRightArrow/></span>
                         </Head2>

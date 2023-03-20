@@ -37,12 +37,12 @@ height:200px;
 const FlowDiagram = () => {
     return(
         <>
-        <div style={pageStyles}>
+        <div style={pageStyles} >
             <div className='container'>
                 <div className='row d-flex justify-content-between align-items-baseline' style={{paddingTop:"61px"}}>
                     <div className='col-12 col-md-5 text-center text-md-start'>
-                        <Head>WHY BUILD</Head>
-                        <Head2 className='justify-content-center justify-content-md-start'>WHY HYDRA
+                        <Head>HOW WE BUILD</Head>
+                        <Head2 className='justify-content-center justify-content-md-start'>WITH HYDRA VR?
                             <span className='d-none d-md-block' style ={{marginLeft:"30px"}}> <BigRightArrow/></span>
                         </Head2>
                     </div>

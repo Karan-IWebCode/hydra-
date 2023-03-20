@@ -2,12 +2,14 @@ import React from 'react'
 
 
 import styled from "styled-components";
-import { Logo, MobileFooterVerticalLine } from "../../svg";
+import { Logo, MobileFooterVerticalLine, BackImage } from "../../svg";
 import { list1, list2 } from './data'
 import { Facebook, Twitter, Linkedin, Youtube, Instagram, Pinterest, Footerline, FooterVerticalLine } from '../../svg/index'
 import Primarybtn from '../ButtonCmpt';
 import Logo2 from '../../assets/Vector.png';
+import Bg from '../../assets/Backimg.png';
 
+// import Bg from '../../assets/BannerImage.png';
 
 const pageStyles = {
   fontFamily: 'Montserrat',
@@ -30,7 +32,7 @@ line-height: 17px;
 /* identical to box height */
 letter-spacing: 0.13em;
 @media (max-width:768px) {
-  line-height: 32px;
+  line-height: 32px;BackImage
   margin: 0px 10px;
 }
 `
@@ -51,12 +53,32 @@ svg{
   flex-direction: column;
 }
 `
+const BackgroundImg = styled.div`
+  /* background-image: url(${Bg});
+  background-repeat: no-repeat; */
+`;
+
+// const BackgroundImg = styled.div`
+
+/* background-image:url('https://scontent.fdel1-1.fna.fbcdn.net/v/t39.30808-6/263023151_4951274888224890_9008792270402632605_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=IqpXDukssxgAX-nUKRe&_nc_ht=scontent.fdel1-1.fna&oh=00_AfA2EjY9bp2vfRo0T5Q5791PTsaHqw-ppcX4_bSxZWce8Q&oe=6419DA29'); */
+// `
+
+const BgImage = styled.img`
+  position: absolute;
+  top: -22%;
+    /* right: 131% !important; */
+    left: 5%;
+    bottom: 0;
+    /* margin: 0 auto; */
+    right: 400px !important;
+`
 
 const Footer = () => {
   return (
-    <div style={pageStyles}>
+    <div style={pageStyles} className="position-relative">
+      <BgImage src={Bg} className="w-75"/>
 
-      <div className='container d-flex flex-column flex-md-row  w-100 justify-content-between' >
+      <BackgroundImg className='container  d-flex flex-column flex-md-row  w-100 justify-content-between'>
         <div className='col-md-2 text-center text-md-left'>
           {/* <Logo/> */}
           <Logo3 src={Logo2}></Logo3>
@@ -102,7 +124,7 @@ const Footer = () => {
         </div>
 
 
-      </div>
+      </BackgroundImg>
       <div className='container'>
         <div className='mt-4 d-block d-md-none text-center'>
           <MobileFooterVerticalLine/>

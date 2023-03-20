@@ -103,13 +103,25 @@ color:white !important ;
 }
 `
 
+const Dive = styled.div`
+margin-left:'150px';
+@media (max-width:768px) {
+  margin-left:'0px';
+}
+`
+const Live = styled.li`
+margin-right:'100px';
+@media (max-width:768px) {
+  margin-left:'0px';
+}
+`
 const Header = () => {
   return (
     <>
 
 
       <div style={pageStyles}>
-        <WrapperContainer className="container">
+        <WrapperContainer className="container" style={{position:'relative',zIndex:100}}>
 
           {/* <div>
           <HeaderGroup />
@@ -170,12 +182,12 @@ const Header = () => {
         </nav> */}
 
           <nav className="navbar navbar-expand-lg bg-body-tertiary w-100">
-            <div className="container p-0">
+            <div className="container p-0" style={{zIndex:23}}>
               <a className="navbar-brand me-md-5" href="#"><HeaderGroup /></a>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon" style={{color:"transparent",backgroundImage:"none"}}><Hamburger/></span>
               </button>
-              <div className="collapse navbar-collapse" style={{position:'relative', zIndex:'23'}} id="navbarText">
+              <Dive className="collapse navbar-collapse" style={{position:'relative', zIndex:23,  }} id="navbarText">
                 <ul className="navbar-nav me-auto ms-md-5 mb-2 mb-lg-0 align-items-center w-100 justify-content-between">
                   <li className="nav-item">
                     <Acc className="nav-link " aria-current="page" href="#">ABOUT</Acc>
@@ -186,9 +198,9 @@ const Header = () => {
                   <li className="nav-item">
                     <Acc className="nav-link" href="#">TECHNOLOGIES</Acc>
                   </li>
-                  <li className="nav-item">
+                  <Live className="nav-item" >
                     <Acc className="nav-link" href="#">HOW TO</Acc>
-                  </li>
+                  </Live>
                   <li className="nav-item ">
                     <Button className="btn " type="submit">
                       CONTACT US
@@ -203,7 +215,7 @@ const Header = () => {
                 <span className="navbar-text">
 
                 </span>
-              </div>
+              </Dive>
             </div>
           </nav>
         </WrapperContainer>

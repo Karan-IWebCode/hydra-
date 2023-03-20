@@ -1,3 +1,5 @@
+
+
 #app {
     height: 100%;
   }
@@ -39,17 +41,6 @@
     object-fit: cover;
   }
   
-  /* .swiper-button-prev::after {
-    display: none;
-  }
   
-  .swiper-button-next {
-    background-image: url('../assets/rightCircleArrow.png') !important;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-  }
+   
   
-  .swiper-button-next::after {
-    display: none;
-  } */

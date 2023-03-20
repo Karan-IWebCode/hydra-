@@ -5,14 +5,15 @@ import { pageStyles, WrapperContainer } from '../../Layout/style'
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import Right from '../../../assets/rightCircleArrow.png'
+import Left from '../../../assets/leftCircleArrow.png'
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import "./styles.css";
-
+// import "./styles.css";
 // import required modules
 import {  Navigation } from "swiper";
 import { Line, PhoneCall, Mail, Location } from '../../../svg';
@@ -36,13 +37,43 @@ color: #FFFFFF;
 `
 
 const Overlay = styled.div``
+const Wrapper = styled.div`
+.swiper-button-prev {
+  background-image: url(${Left})!important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  height:30px !important;
+  width:30px  !important;
+} 
+
+.swiper-button-prev::after {
+  display: none;
+} 
+.swiper-button-next {
+  background-image: url(${Right})!important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  height:30px !important;
+  width:30px  !important;
+} 
+
+.swiper-button-next::after {
+  display: none;
+}
+
+
+`
 
 export const MobileHeroSectionCmpt = () => {
     return(
         <>
         <div style={pageStyles}>
           
+          <Wrapper>
             <WrapperContainer className="w-100 col d-flex flex-row justify-content-between">
+             
               <Swiper
               navigation={true}
               modules={[ Navigation]}
@@ -90,7 +121,7 @@ export const MobileHeroSectionCmpt = () => {
             </Swiper>
             
             </WrapperContainer>
-         
+            </Wrapper>
         </div>
         </>
     )

@@ -63,7 +63,7 @@ const HeroSection = () => {
                 <InfoLogo>
                   <Location/>
                 </InfoLogo>
-                <div style={{marginRight:"20px"}}>
+                <div style={{marginLeft:"10px"}}>
                   <InfoHeading>Pay Us a Visit</InfoHeading>
                   <InfoContent>Union st, Seattle, WA 98101,United States</InfoContent>            
                 </div>
@@ -75,7 +75,7 @@ const HeroSection = () => {
                 <InfoLogo>
                   <PhoneCall/>
                 </InfoLogo>
-                <div style={{marginRight:"20px"}}>
+                <div style={{marginLeft:"20px"}}>
                   <InfoHeading>Give Us a Call</InfoHeading>
                   <InfoContent>(110) 1111-1010</InfoContent>            
                 </div>
@@ -87,7 +87,7 @@ const HeroSection = () => {
                 <InfoLogo>
                   <Mail/>
                 </InfoLogo>
-                <div style={{marginRight:"20px"}}>
+                <div style={{marginLeft:"20px"}}>
                   <InfoHeading>Send Us a Message</InfoHeading>
                   <InfoContent>Contact@HydraVTech.com</InfoContent>            
                 </div>

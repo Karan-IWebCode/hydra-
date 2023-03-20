@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Button2 = styled.button`
   
-  padding: 17px 38px;
+  padding: 16px 39px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;

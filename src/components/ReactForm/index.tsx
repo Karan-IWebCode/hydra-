@@ -32,6 +32,7 @@ const FormStyle = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    z-index: 25;
     @media (max-width:425px) {
         border-radius: 40px;
       }
